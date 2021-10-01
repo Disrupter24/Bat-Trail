@@ -18,14 +18,14 @@ public class BatEngine : MonoBehaviour
     {
         if (!isMoving)
         {
-            SetTargetPos(PullDirection());
+            MoveInDirection(PullDirection());
         }
         else
         {
             if (Slowdown)
             {
                 Slowdown = false;
-                Invoke("MoveAgain", 0.5f);
+                Invoke("MoveAgain", 0.25f);
             }
         }
     }
@@ -57,13 +57,15 @@ public class BatEngine : MonoBehaviour
         }
     }
 
-    private void SetTargetPos(Vector3 Direction)
+    private void MoveInDirection(Vector3 Direction)
     {
         TargetPos = transform.position + Direction;
-        transform.DOMove(TargetPos, 0.5f);
+        WallCheck();
+        
+        transform.DOMove(TargetPos, 0.2f);
         if (Direction != None)
         {
-            MoveCheck();
+            OnMove();
         }
     }
     private void MoveAgain()
@@ -71,8 +73,35 @@ public class BatEngine : MonoBehaviour
         Slowdown = true;
         isMoving = false;
     }
-    private void MoveCheck()
+    private void OnMove()
     {
-        Debug.Log("Has Moved");
+        BoundsCheck();
+    }
+    private void WallCheck()
+    {
+        if (TargetPos.x >= BoundsFinder.RightBorder)
+        {
+            TargetPos = new Vector2(BoundsFinder.RightBorder - 1, TargetPos.y);
+        }
+        else if (TargetPos.x <= BoundsFinder.LeftBorder)
+        {
+            TargetPos = new Vector2(BoundsFinder.LeftBorder + 1, TargetPos.y);
+        }
+        else if (TargetPos.y >= BoundsFinder.TopBorder)
+        {
+            TargetPos = new Vector2(TargetPos.x, BoundsFinder.TopBorder - 1);
+        }
+        else if (TargetPos.y <= BoundsFinder.BottomBorder)
+        {
+            TargetPos = new Vector2(TargetPos.x, BoundsFinder.BottomBorder + 1);
+        }
+    }
+    private void BoundsCheck()
+    {
+        if (transform.position.x > BoundsFinder.RightBorder)
+        {
+            transform.position = new Vector2(BoundsFinder.RightBorder - 1, transform.position.y);
+            Debug.Log("Hit Wall, moving back");
+        }
     }
 }
