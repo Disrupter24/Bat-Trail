@@ -5,13 +5,13 @@ using DG.Tweening;
 
 public class BatEngine : MonoBehaviour
 {
-    [SerializeField] public Vector3 TargetPos;
+    [System.NonSerialized] public Vector2 TargetPos;
     private bool isMoving;
-    private Vector3 Up = new Vector3(0, 1, 0);
-    private Vector3 Left = new Vector3(-1, 0, 0);
-    private Vector3 Down = new Vector3(0, -1, 0);
-    private Vector3 Right = new Vector3(1, 0, 0);
-    private Vector3 None = new Vector3(0, 0, 0);
+    private Vector3 Up = new Vector2(0, 1);
+    private Vector3 Left = new Vector2(-1, 0);
+    private Vector3 Down = new Vector2(0, -1);
+    private Vector3 Right = new Vector2(1, 0);
+    private Vector3 None = new Vector2(0, 0);
     private bool Slowdown = true;
 
     void Update()
@@ -58,14 +58,13 @@ public class BatEngine : MonoBehaviour
     }
 
     private void MoveInDirection(Vector3 Direction)
-    {
-        TargetPos = transform.position + Direction;
-        WallCheck();
-        
-        transform.DOMove(TargetPos, 0.2f);
+    {        
         if (Direction != None)
         {
-            OnMove();
+            TargetPos = transform.position + Direction;
+            WallCheck();
+            CheckTarget(MapPreparation.WallLocations);
+            transform.DOMove(TargetPos, 0.2f);
         }
     }
     private void MoveAgain()
@@ -73,35 +72,31 @@ public class BatEngine : MonoBehaviour
         Slowdown = true;
         isMoving = false;
     }
-    private void OnMove()
-    {
-        BoundsCheck();
-    }
     private void WallCheck()
     {
-        if (TargetPos.x >= BoundsFinder.RightBorder)
+        if (TargetPos.x >= MapPreparation.RightBorder | TargetPos.x <= MapPreparation.LeftBorder | TargetPos.y >= MapPreparation.TopBorder | TargetPos.y <= MapPreparation.BottomBorder)
         {
-            TargetPos = new Vector2(BoundsFinder.RightBorder - 1, TargetPos.y);
-        }
-        else if (TargetPos.x <= BoundsFinder.LeftBorder)
-        {
-            TargetPos = new Vector2(BoundsFinder.LeftBorder + 1, TargetPos.y);
-        }
-        else if (TargetPos.y >= BoundsFinder.TopBorder)
-        {
-            TargetPos = new Vector2(TargetPos.x, BoundsFinder.TopBorder - 1);
-        }
-        else if (TargetPos.y <= BoundsFinder.BottomBorder)
-        {
-            TargetPos = new Vector2(TargetPos.x, BoundsFinder.BottomBorder + 1);
+            Debug.Log("Out of bounds, moving back");
+            TargetPos = gameObject.transform.position;
         }
     }
-    private void BoundsCheck()
+    private void CheckTarget(Vector2[] Target)
     {
-        if (transform.position.x > BoundsFinder.RightBorder)
+        if (Target != null)
         {
-            transform.position = new Vector2(BoundsFinder.RightBorder - 1, transform.position.y);
-            Debug.Log("Hit Wall, moving back");
+            for (int i = 0; i < Target.Length; i++)
+            {
+                if (TargetPos == Target[i])
+                {
+                    Debug.Log("Hit Wall, moving back");
+                    TargetPos = gameObject.transform.position;
+                }
+            }
         }
+        else
+        {
+            return;
+        }
+        
     }
 }
