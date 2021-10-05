@@ -295,7 +295,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 11, y: 11}
+  m_Size: {x: 9, y: 9}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -331,7 +331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39d6de0e2ace1745960a767493c59ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetPos: {x: 0, y: 0, z: 0}
 --- !u!212 &1149511341
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -373,7 +372,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.038576603, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -427,4 +426,83 @@ Transform:
   - {fileID: 1148359435}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1948116931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1948116933}
+  - component: {fileID: 1948116932}
+  m_Layer: 0
+  m_Name: Generation Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1948116932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948116931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8b0a23e62d9e14086ed59bd81769ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoadPreset: 1
+  GridSize: {x: 9, y: 9}
+  StartPoint: {x: 0, y: -4}
+  WallLocations:
+  - {x: -3, y: -4}
+  - {x: 3, y: -4}
+  - {x: -2, y: -1}
+  - {x: -1, y: -1}
+  - {x: 1, y: -1}
+  - {x: 3, y: -1}
+  - {x: 4, y: -1}
+  - {x: 1, y: 0}
+  - {x: 1, y: 1}
+  - {x: -4, y: 2}
+  - {x: -3, y: 2}
+  - {x: -1, y: 3}
+  - {x: 2, y: 3}
+  - {x: -1, y: 4}
+  - {x: 2, y: 4}
+  FruitLocations:
+  - {x: -4, y: -4}
+  - {x: 4, y: -4}
+  - {x: 0, y: -1}
+  - {x: 4, y: 0}
+  - {x: -4, y: 1}
+  - {x: -4, y: 3}
+  - {x: 0, y: 4}
+  - {x: 4, y: 4}
+  PitfallLocations:
+  - {x: -3, y: -2}
+  - {x: -2, y: 0}
+  - {x: 4, y: 1}
+  - {x: 1, y: 3}
+  - {x: -2, y: 4}
+  GridSpriteRenderer: {fileID: 1148359437}
+  BatPosition: {fileID: 1149511342}
+--- !u!4 &1948116933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948116931}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
