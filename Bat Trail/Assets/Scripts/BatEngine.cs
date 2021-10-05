@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,12 +8,13 @@ public class BatEngine : MonoBehaviour
 {
     [System.NonSerialized] public Vector2 TargetPos;
     private bool isMoving;
-    private Vector3 Up = new Vector2(0, 1);
-    private Vector3 Left = new Vector2(-1, 0);
-    private Vector3 Down = new Vector2(0, -1);
-    private Vector3 Right = new Vector2(1, 0);
-    private Vector3 None = new Vector2(0, 0);
+    private Vector2 Up = new Vector2(0, 1);
+    private Vector2 Left = new Vector2(-1, 0);
+    private Vector2 Down = new Vector2(0, -1);
+    private Vector2 Right = new Vector2(1, 0);
+    private Vector2 None = new Vector2(0, 0);
     private bool Slowdown = true;
+    private int TriggerNumber;
 
     void Update()
     {
@@ -57,13 +59,28 @@ public class BatEngine : MonoBehaviour
         }
     }
 
-    private void MoveInDirection(Vector3 Direction)
+    private void MoveInDirection(Vector2 Direction)
     {        
         if (Direction != None)
         {
-            TargetPos = transform.position + Direction;
-            WallCheck();
-            CheckTarget(MapPreparation.WallLocations);
+            TargetPos = new Vector2(transform.position.x, transform.position.y) + Direction;
+            BoundsCheck();
+            if (CheckTarget(MapPreparation.WallLocations))
+            {
+                TargetPos = transform.position;
+            }
+            if (CheckTarget(MapPreparation.FruitLocations))
+            {
+                Manager.FruitScore++;
+                ClearFruit(TriggerNumber);
+                Debug.Log(Manager.FruitScore);
+
+            }
+            if (CheckTarget(MapPreparation.PitfallLocations))
+            {
+                Debug.Log("Stepped on Pitfall");
+                //EndTurn();
+            }
             transform.DOMove(TargetPos, 0.2f);
         }
     }
@@ -72,7 +89,7 @@ public class BatEngine : MonoBehaviour
         Slowdown = true;
         isMoving = false;
     }
-    private void WallCheck()
+    private void BoundsCheck()
     {
         if (TargetPos.x >= MapPreparation.RightBorder | TargetPos.x <= MapPreparation.LeftBorder | TargetPos.y >= MapPreparation.TopBorder | TargetPos.y <= MapPreparation.BottomBorder)
         {
@@ -80,7 +97,7 @@ public class BatEngine : MonoBehaviour
             TargetPos = gameObject.transform.position;
         }
     }
-    private void CheckTarget(Vector2[] Target)
+    private bool CheckTarget(Vector2[] Target)
     {
         if (Target != null)
         {
@@ -88,15 +105,24 @@ public class BatEngine : MonoBehaviour
             {
                 if (TargetPos == Target[i])
                 {
-                    Debug.Log("Hit Wall, moving back");
-                    TargetPos = gameObject.transform.position;
+                    TriggerNumber = i;
+                    return true;
                 }
             }
+            return false;
         }
         else
         {
-            return;
+            return false;
         }
         
+    }
+    private void ClearFruit(int FruitToClear)
+    {
+        for (int i = FruitToClear; i < MapPreparation.FruitLocations.Length - 1; i++)
+        {
+            MapPreparation.FruitLocations[i] = MapPreparation.FruitLocations[i + 1];
+        }
+        Array.Resize<Vector2>(ref MapPreparation.FruitLocations, MapPreparation.FruitLocations.Length - 1);
     }
 }

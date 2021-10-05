@@ -245,7 +245,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148359434}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68f76769e5e31d24db58d5cbe4734a25, type: 3}
   m_Name: 
@@ -492,6 +492,7 @@ MonoBehaviour:
   - {x: -2, y: 4}
   GridSpriteRenderer: {fileID: 1148359437}
   BatPosition: {fileID: 1149511342}
+  MapPreparation: {fileID: 1148359436}
 --- !u!4 &1948116933
 Transform:
   m_ObjectHideFlags: 0

@@ -12,7 +12,6 @@ public class MapPreparation : MonoBehaviour
     public static Vector2[] WallLocations;
     public static Vector2[] FruitLocations;
     public static Vector2[] PitfallLocations;
-    private int WallCount = 3;
     private Object WallPrefab;
     private Object FruitPrefab;
     private Object PitfallPrefab;

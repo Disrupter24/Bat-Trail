@@ -12,6 +12,7 @@ public class GenerationSettings : MonoBehaviour
     [SerializeField] private Vector2[] PitfallLocations;
     [SerializeField] private SpriteRenderer GridSpriteRenderer;
     [SerializeField] private Transform BatPosition;
+    [SerializeField] private MapPreparation MapPreparation;
     private void Start()
     {
         if (!LoadPreset)
@@ -24,5 +25,6 @@ public class GenerationSettings : MonoBehaviour
         MapPreparation.WallLocations = WallLocations;
         MapPreparation.FruitLocations = FruitLocations;
         MapPreparation.PitfallLocations = PitfallLocations;
+        MapPreparation.enabled = true;
     }
 }
