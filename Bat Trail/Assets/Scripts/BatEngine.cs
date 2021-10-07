@@ -74,12 +74,13 @@ public class BatEngine : MonoBehaviour
             if (CheckTarget(MapPreparation.FruitLocations))
             {
                 Manager.FruitScore++;
-                ClearFruit(TriggerNumber);
+                ClearObject(TriggerNumber, MapPreparation.FruitObjects, MapPreparation.FruitLocations);
                 Debug.Log("Fruits Collected: " + Manager.FruitScore + " / " + MapPreparation.FruitLocations.Length + " remaining.");
 
             }
             if (CheckTarget(MapPreparation.PitfallLocations))
             {
+                ClearObject(TriggerNumber, MapPreparation.PitfallObjects, MapPreparation.PitfallLocations);
                 Debug.Log("Stepped on Pitfall");
                 //EndTurn();
             }
@@ -122,23 +123,23 @@ public class BatEngine : MonoBehaviour
         }
         
     }
-    private void ClearFruit(int FruitToClear)
+    private void ClearObject(int ObjectToClear, GameObject[]ArrayToClear, Vector2[] VectorArrayToClear)
     {
-        if (MapPreparation.FruitObjects[FruitToClear].GetComponent<AudioSource>() != null)
+        if (ArrayToClear[ObjectToClear].GetComponent<AudioSource>() != null)
         {
-            MapPreparation.FruitObjects[FruitToClear].GetComponent<AudioSource>().enabled = false;
+            ArrayToClear[ObjectToClear].GetComponent<AudioSource>().enabled = false;
         }
-        if (MapPreparation.FruitObjects[FruitToClear].GetComponent<SpriteRenderer>() != null)
+        if (ArrayToClear[ObjectToClear].GetComponent<SpriteRenderer>() != null)
         {
-            MapPreparation.FruitObjects[FruitToClear].GetComponent<SpriteRenderer>().enabled = false;
+           ArrayToClear[ObjectToClear].GetComponent<SpriteRenderer>().enabled = true;
         }
-        for (int i = FruitToClear; i < MapPreparation.FruitLocations.Length - 1; i++)
+        for (int i = ObjectToClear; i < ArrayToClear.Length - 1; i++)
         {
-            MapPreparation.FruitLocations[i] = MapPreparation.FruitLocations[i + 1];
-            MapPreparation.FruitObjects[i] = MapPreparation.FruitObjects[i + 1];
+            VectorArrayToClear[i] = VectorArrayToClear[i + 1];
+            ArrayToClear[i] = ArrayToClear[i + 1];
         }
-        Array.Resize<Vector2>(ref MapPreparation.FruitLocations, MapPreparation.FruitLocations.Length - 1);
-        Array.Resize<GameObject>(ref MapPreparation.FruitObjects, MapPreparation.FruitObjects.Length - 1);
+        Array.Resize<Vector2>(ref VectorArrayToClear, VectorArrayToClear.Length - 1);
+        Array.Resize<GameObject>(ref ArrayToClear, ArrayToClear.Length - 1);
     }
     private void PlaySounds(GameObject[] TargetArray)
     {

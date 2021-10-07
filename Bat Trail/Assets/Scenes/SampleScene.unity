@@ -842,9 +842,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoadPreset: 0
   RandomGridSize: {x: 9, y: 9}
-  RandomWallCount: 10
-  RandomFruitCount: 10
-  RandomPitfallCount: 10
+  RandomWallCount: 15
+  RandomFruitCount: 8
+  RandomPitfallCount: 8
   GridSize: {x: 9, y: 9}
   StartPoint: {x: 0, y: -4}
   WallLocations:
