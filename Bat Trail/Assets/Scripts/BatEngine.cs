@@ -16,6 +16,7 @@ public class BatEngine : MonoBehaviour
     private bool Slowdown = true;
     private int TriggerNumber;
     private int StepsTaken;
+    public static int StepLimit;
 
     void Update()
     {
@@ -127,6 +128,10 @@ public class BatEngine : MonoBehaviour
         {
             MapPreparation.FruitObjects[FruitToClear].GetComponent<AudioSource>().enabled = false;
         }
+        if (MapPreparation.FruitObjects[FruitToClear].GetComponent<SpriteRenderer>() != null)
+        {
+            MapPreparation.FruitObjects[FruitToClear].GetComponent<SpriteRenderer>().enabled = false;
+        }
         for (int i = FruitToClear; i < MapPreparation.FruitLocations.Length - 1; i++)
         {
             MapPreparation.FruitLocations[i] = MapPreparation.FruitLocations[i + 1];
@@ -151,9 +156,9 @@ public class BatEngine : MonoBehaviour
     }
     private void StepCheck()
     {
-        if (StepsTaken > 20)
+        if (StepsTaken == StepLimit)
         {
-            Debug.Log("You've taken " + StepsTaken + " steps.");
+            Debug.Log("You've taken " + StepLimit + " steps.");
         }
     }
 }
