@@ -13,6 +13,12 @@ public class BatEngine : MonoBehaviour
     private Vector3 Right = new Vector3(1, 0, 0);
     private Vector3 None = new Vector3(0, 0, 0);
     private bool Slowdown = true;
+<<<<<<< Updated upstream
+=======
+    private int TriggerNumber;
+    private int StepsTaken;
+    public static int StepLimit;
+>>>>>>> Stashed changes
 
     void Update()
     {
@@ -87,7 +93,15 @@ public class BatEngine : MonoBehaviour
         {
             TargetPos = new Vector2(BoundsFinder.LeftBorder + 1, TargetPos.y);
         }
+<<<<<<< Updated upstream
         else if (TargetPos.y >= BoundsFinder.TopBorder)
+=======
+        if (MapPreparation.FruitObjects[FruitToClear].GetComponent<SpriteRenderer>() != null)
+        {
+            MapPreparation.FruitObjects[FruitToClear].GetComponent<SpriteRenderer>().enabled = false;
+        }
+        for (int i = FruitToClear; i < MapPreparation.FruitLocations.Length - 1; i++)
+>>>>>>> Stashed changes
         {
             TargetPos = new Vector2(TargetPos.x, BoundsFinder.TopBorder - 1);
         }
@@ -98,10 +112,16 @@ public class BatEngine : MonoBehaviour
     }
     private void BoundsCheck()
     {
+<<<<<<< Updated upstream
         if (transform.position.x > BoundsFinder.RightBorder)
         {
             transform.position = new Vector2(BoundsFinder.RightBorder - 1, transform.position.y);
             Debug.Log("Hit Wall, moving back");
+=======
+        if (StepsTaken == StepLimit)
+        {
+            Debug.Log("You've taken " + StepLimit + " steps.");
+>>>>>>> Stashed changes
         }
     }
 }
