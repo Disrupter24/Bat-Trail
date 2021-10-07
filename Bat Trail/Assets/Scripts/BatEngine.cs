@@ -73,7 +73,7 @@ public class BatEngine : MonoBehaviour
             {
                 Manager.FruitScore++;
                 ClearFruit(TriggerNumber);
-                Debug.Log(Manager.FruitScore);
+                Debug.Log("Fruits Collected: " + Manager.FruitScore + " / " + MapPreparation.FruitLocations.Length + " remaining.");
 
             }
             if (CheckTarget(MapPreparation.PitfallLocations))
@@ -123,12 +123,16 @@ public class BatEngine : MonoBehaviour
     }
     private void ClearFruit(int FruitToClear)
     {
+        if (MapPreparation.FruitObjects[FruitToClear].GetComponent<AudioSource>() != null)
+        {
+            MapPreparation.FruitObjects[FruitToClear].GetComponent<AudioSource>().enabled = false;
+        }
         for (int i = FruitToClear; i < MapPreparation.FruitLocations.Length - 1; i++)
         {
             MapPreparation.FruitLocations[i] = MapPreparation.FruitLocations[i + 1];
             MapPreparation.FruitObjects[i] = MapPreparation.FruitObjects[i + 1];
         }
         Array.Resize<Vector2>(ref MapPreparation.FruitLocations, MapPreparation.FruitLocations.Length - 1);
-        Array.Resize<GameObject>(ref MapPreparation.FruitObjects, MapPreparation.FruitLocations.Length - 1);
+        Array.Resize<GameObject>(ref MapPreparation.FruitObjects, MapPreparation.FruitObjects.Length - 1);
     }
 }
