@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 809000348}
   - component: {fileID: 809000347}
   m_Layer: 0
-  m_Name: 325647__shadydave__expressions-of-the-mind-piano-loop
+  m_Name: Background Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -840,7 +840,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8b0a23e62d9e14086ed59bd81769ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoadPreset: 1
+  LoadPreset: 0
+  RandomGridSize: {x: 9, y: 9}
+  RandomWallCount: 10
+  RandomFruitCount: 10
+  RandomPitfallCount: 10
   GridSize: {x: 9, y: 9}
   StartPoint: {x: 0, y: -4}
   WallLocations:
@@ -877,6 +881,7 @@ MonoBehaviour:
   GridSpriteRenderer: {fileID: 1148359437}
   BatPosition: {fileID: 1149511342}
   MapPreparation: {fileID: 1148359436}
+  StepLimit: 20
 --- !u!4 &1948116933
 Transform:
   m_ObjectHideFlags: 0
