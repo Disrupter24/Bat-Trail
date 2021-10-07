@@ -81,6 +81,10 @@ public class BatEngine : MonoBehaviour
                 Debug.Log("Stepped on Pitfall");
                 //EndTurn();
             }
+            if (TargetPos != new Vector2 (transform.position.x, transform.position.y)) // This script will be executed only when the player moves successfully (is not blocked).
+            {
+                //Debug.Log("Moved");
+            }    
             transform.DOMove(TargetPos, 0.2f);
         }
     }
@@ -122,7 +126,9 @@ public class BatEngine : MonoBehaviour
         for (int i = FruitToClear; i < MapPreparation.FruitLocations.Length - 1; i++)
         {
             MapPreparation.FruitLocations[i] = MapPreparation.FruitLocations[i + 1];
+            MapPreparation.FruitObjects[i] = MapPreparation.FruitObjects[i + 1];
         }
         Array.Resize<Vector2>(ref MapPreparation.FruitLocations, MapPreparation.FruitLocations.Length - 1);
+        Array.Resize<GameObject>(ref MapPreparation.FruitObjects, MapPreparation.FruitLocations.Length - 1);
     }
 }

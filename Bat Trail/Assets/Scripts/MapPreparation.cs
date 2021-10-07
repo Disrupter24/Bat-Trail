@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,12 +13,18 @@ public class MapPreparation : MonoBehaviour
     public static Vector2[] WallLocations;
     public static Vector2[] FruitLocations;
     public static Vector2[] PitfallLocations;
-    private Object WallPrefab;
-    private Object FruitPrefab;
-    private Object PitfallPrefab;
+    private UnityEngine.Object WallPrefab;
+    private UnityEngine.Object FruitPrefab;
+    private UnityEngine.Object PitfallPrefab;
+    public static  GameObject[] WallObjects;
+    public static GameObject[] FruitObjects;
+    public static  GameObject[] PitfallObjects;
     void Start()
     {
         SetBorders(); //NOTE: This script will assume that the box is perfectly rounded to the grid and centered on 0, otherwise some jank might occur.
+        WallObjects = new GameObject[WallLocations.Length];
+        FruitObjects = new GameObject[FruitLocations.Length];
+        PitfallObjects = new GameObject[PitfallLocations.Length];
         WallHandler();
         FruitHandler();
         PitfallHandler();
@@ -27,36 +34,32 @@ public class MapPreparation : MonoBehaviour
     {
         GridSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         TopBorder = Mathf.RoundToInt(0.5f + transform.position.y + (GridSpriteRenderer.size.y / 2));
-        Debug.Log(TopBorder);
         LeftBorder = Mathf.RoundToInt(-0.5f + transform.position.x - (GridSpriteRenderer.size.x / 2));
-        Debug.Log(LeftBorder);
         BottomBorder = Mathf.RoundToInt(-0.5f + transform.position.y - (GridSpriteRenderer.size.y / 2));
-        Debug.Log(BottomBorder);
         RightBorder = Mathf.RoundToInt(0.5f + transform.position.x + (GridSpriteRenderer.size.x / 2));
-        Debug.Log(RightBorder);
     }
     private void WallHandler()
     {
         WallPrefab = Resources.Load("prefabs/Wall", typeof(GameObject));
-        SpawnTime(WallLocations, WallPrefab);
+        SpawnTime(WallLocations, WallPrefab, WallObjects);
     }
     private void FruitHandler()
     {
         FruitPrefab = Resources.Load("prefabs/Fruit", typeof(GameObject));
-        SpawnTime(FruitLocations, FruitPrefab);
+        SpawnTime(FruitLocations, FruitPrefab, FruitObjects);
     }
     private void PitfallHandler()
     {
         PitfallPrefab = Resources.Load("prefabs/Pitfall", typeof(GameObject));
-        SpawnTime(PitfallLocations, PitfallPrefab);
+        SpawnTime(PitfallLocations, PitfallPrefab, PitfallObjects);
     }
-    void SpawnTime(Vector2[] SpawnType, Object Prefab)
+    void SpawnTime(Vector2[] SpawnType, UnityEngine.Object Prefab, GameObject[] ObjectArray)
     {
         if(SpawnType != null && Prefab!= null)
         {
             for (int i = 0; i < SpawnType.Length; i++)
             {
-                Instantiate(Prefab, SpawnType[i], Quaternion.identity);
+                ObjectArray[i] = Instantiate(Prefab, SpawnType[i], Quaternion.identity) as GameObject;
             }
         }
     }
