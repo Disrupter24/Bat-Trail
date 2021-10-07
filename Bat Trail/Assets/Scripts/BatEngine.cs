@@ -15,6 +15,7 @@ public class BatEngine : MonoBehaviour
     private Vector2 None = new Vector2(0, 0);
     private bool Slowdown = true;
     private int TriggerNumber;
+    private int StepsTaken;
 
     void Update()
     {
@@ -83,7 +84,7 @@ public class BatEngine : MonoBehaviour
             }
             if (TargetPos != new Vector2 (transform.position.x, transform.position.y)) // This script will be executed only when the player moves successfully (is not blocked).
             {
-                //Debug.Log("Moved");
+                OnMove();
             }    
             transform.DOMove(TargetPos, 0.2f);
         }
@@ -97,7 +98,6 @@ public class BatEngine : MonoBehaviour
     {
         if (TargetPos.x >= MapPreparation.RightBorder | TargetPos.x <= MapPreparation.LeftBorder | TargetPos.y >= MapPreparation.TopBorder | TargetPos.y <= MapPreparation.BottomBorder)
         {
-            Debug.Log("Out of bounds, moving back");
             TargetPos = gameObject.transform.position;
         }
     }
@@ -134,5 +134,26 @@ public class BatEngine : MonoBehaviour
         }
         Array.Resize<Vector2>(ref MapPreparation.FruitLocations, MapPreparation.FruitLocations.Length - 1);
         Array.Resize<GameObject>(ref MapPreparation.FruitObjects, MapPreparation.FruitObjects.Length - 1);
+    }
+    private void PlaySounds(GameObject[] TargetArray)
+    {
+        for (int i = 0; i < TargetArray.Length; i++)
+        {
+            TargetArray[i].GetComponent<AudioSource>().Play();
+        }
+    }
+    private void OnMove()
+    {
+        StepsTaken++;
+        StepCheck();
+        PlaySounds(MapPreparation.FruitObjects);
+        PlaySounds(MapPreparation.PitfallObjects);
+    }
+    private void StepCheck()
+    {
+        if (StepsTaken > 20)
+        {
+            Debug.Log("You've taken " + StepsTaken + " steps.");
+        }
     }
 }
