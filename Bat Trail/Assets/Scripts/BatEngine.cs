@@ -15,6 +15,7 @@ public class BatEngine : MonoBehaviour
     private Vector2 None = new Vector2(0, 0);
     private bool Slowdown = true;
     private int TriggerNumber;
+    private int StepsTaken;
 
     void Update()
     {
@@ -73,7 +74,7 @@ public class BatEngine : MonoBehaviour
             {
                 Manager.FruitScore++;
                 ClearFruit(TriggerNumber);
-                Debug.Log(Manager.FruitScore);
+                Debug.Log("Fruits Collected: " + Manager.FruitScore + " / " + MapPreparation.FruitLocations.Length + " remaining.");
 
             }
             if (CheckTarget(MapPreparation.PitfallLocations))
@@ -81,6 +82,10 @@ public class BatEngine : MonoBehaviour
                 Debug.Log("Stepped on Pitfall");
                 //EndTurn();
             }
+            if (TargetPos != new Vector2 (transform.position.x, transform.position.y)) // This script will be executed only when the player moves successfully (is not blocked).
+            {
+                OnMove();
+            }    
             transform.DOMove(TargetPos, 0.2f);
         }
     }
@@ -93,7 +98,6 @@ public class BatEngine : MonoBehaviour
     {
         if (TargetPos.x >= MapPreparation.RightBorder | TargetPos.x <= MapPreparation.LeftBorder | TargetPos.y >= MapPreparation.TopBorder | TargetPos.y <= MapPreparation.BottomBorder)
         {
-            Debug.Log("Out of bounds, moving back");
             TargetPos = gameObject.transform.position;
         }
     }
@@ -119,10 +123,37 @@ public class BatEngine : MonoBehaviour
     }
     private void ClearFruit(int FruitToClear)
     {
+        if (MapPreparation.FruitObjects[FruitToClear].GetComponent<AudioSource>() != null)
+        {
+            MapPreparation.FruitObjects[FruitToClear].GetComponent<AudioSource>().enabled = false;
+        }
         for (int i = FruitToClear; i < MapPreparation.FruitLocations.Length - 1; i++)
         {
             MapPreparation.FruitLocations[i] = MapPreparation.FruitLocations[i + 1];
+            MapPreparation.FruitObjects[i] = MapPreparation.FruitObjects[i + 1];
         }
         Array.Resize<Vector2>(ref MapPreparation.FruitLocations, MapPreparation.FruitLocations.Length - 1);
+        Array.Resize<GameObject>(ref MapPreparation.FruitObjects, MapPreparation.FruitObjects.Length - 1);
+    }
+    private void PlaySounds(GameObject[] TargetArray)
+    {
+        for (int i = 0; i < TargetArray.Length; i++)
+        {
+            TargetArray[i].GetComponent<AudioSource>().Play();
+        }
+    }
+    private void OnMove()
+    {
+        StepsTaken++;
+        StepCheck();
+        PlaySounds(MapPreparation.FruitObjects);
+        PlaySounds(MapPreparation.PitfallObjects);
+    }
+    private void StepCheck()
+    {
+        if (StepsTaken > 20)
+        {
+            Debug.Log("You've taken " + StepsTaken + " steps.");
+        }
     }
 }

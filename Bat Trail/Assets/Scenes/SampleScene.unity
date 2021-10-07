@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0349785, g: 0.021549735, b: 0.03993711, a: 1}
+  m_IndirectSpecularColor: {r: 0.034984726, g: 0.021549301, b: 0.039924577, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -148,7 +148,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -235,15 +235,15 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 97d63330f68a45d459b597aa5062dd2e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.036
+  m_Volume: 0.101
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 8
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 2.5233803
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -327,7 +327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809000346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.91, y: 4.18, z: -1.8061366}
+  m_LocalPosition: {x: -7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -439,6 +439,7 @@ GameObject:
   - component: {fileID: 1149511342}
   - component: {fileID: 1149511341}
   - component: {fileID: 1149511340}
+  - component: {fileID: 1149511343}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Untagged
@@ -497,7 +498,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f, type: 3}
   m_Color: {r: 0, g: 0.038576603, b: 1, a: 1}
   m_FlipX: 0
@@ -524,6 +525,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1149511343
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149511339}
+  m_Enabled: 1
 --- !u!1 &1206865618
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +543,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1206865619}
   - component: {fileID: 1206865621}
-  - component: {fileID: 1206865620}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -556,18 +564,6 @@ Transform:
   m_Father: {fileID: 1884008054}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1206865620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206865618}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68f76769e5e31d24db58d5cbe4734a25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1206865621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -771,7 +767,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 0745df0f905467b4f858c5792521d562, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
