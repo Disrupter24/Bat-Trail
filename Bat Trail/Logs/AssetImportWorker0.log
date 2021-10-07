@@ -15,11 +15,11 @@ C:/Users/disru/Documents/GitHub/Bat-Trail/Bat Trail
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59778
+52890
 Successfully changed project path to: C:/Users/disru/Documents/GitHub/Bat-Trail/Bat Trail
 C:/Users/disru/Documents/GitHub/Bat-Trail/Bat Trail
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 29.84 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 29.59 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.1f1 (77a89f25062f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,13 +35,13 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56612
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001448 seconds.
+Registered in 0.001414 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 29.16 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 30.88 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -50,443 +50,82 @@ Mono: successfully reloaded assembly
 - Completed reload, in  0.854 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001367 seconds.
+Registered in 0.001302 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 30.50 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 32.24 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.877 seconds
+- Completed reload, in  0.765 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1820 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 85.0 MB.
-System memory in use after: 85.0 MB.
+System memory in use before: 85.2 MB.
+System memory in use after: 85.1 MB.
 
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2266.
-Total: 1.731800 ms (FindLiveObjects: 0.159400 ms CreateObjectMapping: 0.067200 ms MarkObjects: 1.403800 ms  DeleteObjects: 0.100600 ms)
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2267.
+Total: 1.757700 ms (FindLiveObjects: 0.147600 ms CreateObjectMapping: 0.054400 ms MarkObjects: 1.453300 ms  DeleteObjects: 0.101600 ms)
 
 ========================================================================
 Received Import Request.
   path: Assets/Resources/Prefabs/Fruit.prefab
   artifactKey: Guid(894d11b1311bb7942899e75362f0f048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/Fruit.prefab using Guid(894d11b1311bb7942899e75362f0f048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5b740da24a6aa2e2f8ba80d914a0716') in 0.096531 seconds
-  Import took 0.099746 seconds .
+Start importing Assets/Resources/Prefabs/Fruit.prefab using Guid(894d11b1311bb7942899e75362f0f048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f52269894ee8d5917e734e1419a969') in 0.080050 seconds
+  Import took 0.082606 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Resources/Prefabs/Wall.prefab
-  artifactKey: Guid(a6937e2ef67c0fa4dbfcf5803c6576d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/Wall.prefab using Guid(a6937e2ef67c0fa4dbfcf5803c6576d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84aec1e18f14f2e0c1bba416cc52f705') in 0.012414 seconds
-  Import took 0.015523 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
+  Time since last request: 1.542852 seconds.
   path: Assets/Resources/Prefabs/Pitfall.prefab
   artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '888754638cef7dc0a84c735f4f24c0f2') in 0.012205 seconds
-  Import took 0.015806 seconds .
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cbdb5098e1d6a813dfb885f9f81a67f') in 0.037002 seconds
+  Import took 0.039631 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001325 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.674 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 88.2 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2278.
+Total: 1.740300 ms (FindLiveObjects: 0.170900 ms CreateObjectMapping: 0.072400 ms MarkObjects: 1.415800 ms  DeleteObjects: 0.080400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.032234 seconds.
+  Time since last request: 46.179975 seconds.
   path: Assets/Resources/Prefabs/Fruit.prefab
   artifactKey: Guid(894d11b1311bb7942899e75362f0f048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Prefabs/Fruit.prefab using Guid(894d11b1311bb7942899e75362f0f048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5b740da24a6aa2e2f8ba80d914a0716') in 0.008079 seconds
-  Import took 0.011110 seconds .
+Start importing Assets/Resources/Prefabs/Fruit.prefab using Guid(894d11b1311bb7942899e75362f0f048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6a3caea4c3af13fef041701986d522c') in 0.043403 seconds
+  Import took 0.045953 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001307 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.709 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.1 MB.
-System memory in use after: 88.1 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2277.
-Total: 1.706100 ms (FindLiveObjects: 0.172600 ms CreateObjectMapping: 0.058400 ms MarkObjects: 1.393600 ms  DeleteObjects: 0.080600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001383 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.683 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.2 MB.
-System memory in use after: 88.1 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2281.
-Total: 1.646600 ms (FindLiveObjects: 0.166100 ms CreateObjectMapping: 0.057700 ms MarkObjects: 1.334100 ms  DeleteObjects: 0.087800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001267 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.684 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.2 MB.
-System memory in use after: 88.2 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2285.
-Total: 1.867100 ms (FindLiveObjects: 0.180400 ms CreateObjectMapping: 0.068000 ms MarkObjects: 1.523800 ms  DeleteObjects: 0.093700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001284 seconds.
+Registered in 0.001410 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.682 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.2 MB.
-System memory in use after: 88.2 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2289.
-Total: 1.664900 ms (FindLiveObjects: 0.184300 ms CreateObjectMapping: 0.065000 ms MarkObjects: 1.326700 ms  DeleteObjects: 0.087900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001315 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.678 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.2 MB.
-System memory in use after: 88.2 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2293.
-Total: 1.772100 ms (FindLiveObjects: 0.169900 ms CreateObjectMapping: 0.056700 ms MarkObjects: 1.453100 ms  DeleteObjects: 0.091500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 113.923727 seconds.
-  path: Assets/325647__shadydave__expressions-of-the-mind-piano-loop.mp3
-  artifactKey: Guid(97d63330f68a45d459b597aa5062dd2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/325647__shadydave__expressions-of-the-mind-piano-loop.mp3 using Guid(97d63330f68a45d459b597aa5062dd2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b91c53c18ba3333f5d82c6bccaf45fae') in 0.065141 seconds
-  Import took 0.068333 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001714 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.702 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2300.
-Total: 1.743800 ms (FindLiveObjects: 0.167400 ms CreateObjectMapping: 0.050300 ms MarkObjects: 1.437700 ms  DeleteObjects: 0.087100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001304 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.683 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2304.
-Total: 1.659400 ms (FindLiveObjects: 0.152600 ms CreateObjectMapping: 0.051900 ms MarkObjects: 1.369000 ms  DeleteObjects: 0.084900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001290 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.679 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2308.
-Total: 1.762400 ms (FindLiveObjects: 0.156500 ms CreateObjectMapping: 0.051800 ms MarkObjects: 1.462500 ms  DeleteObjects: 0.090800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001327 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.672 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2312.
-Total: 1.912800 ms (FindLiveObjects: 0.174800 ms CreateObjectMapping: 0.065600 ms MarkObjects: 1.577700 ms  DeleteObjects: 0.093700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001303 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.679 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2316.
-Total: 1.690900 ms (FindLiveObjects: 0.161200 ms CreateObjectMapping: 0.055900 ms MarkObjects: 1.382400 ms  DeleteObjects: 0.090500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001300 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.670 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2320.
-Total: 1.730500 ms (FindLiveObjects: 0.178800 ms CreateObjectMapping: 0.062500 ms MarkObjects: 1.397800 ms  DeleteObjects: 0.090100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001399 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.678 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2324.
-Total: 2.021300 ms (FindLiveObjects: 0.192000 ms CreateObjectMapping: 0.073300 ms MarkObjects: 1.662800 ms  DeleteObjects: 0.091900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001361 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.713 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2328.
-Total: 1.655900 ms (FindLiveObjects: 0.168000 ms CreateObjectMapping: 0.061600 ms MarkObjects: 1.331000 ms  DeleteObjects: 0.094400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001287 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.673 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2332.
-Total: 1.753500 ms (FindLiveObjects: 0.158600 ms CreateObjectMapping: 0.056700 ms MarkObjects: 1.434300 ms  DeleteObjects: 0.103200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001274 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.664 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.3 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2336.
-Total: 1.722700 ms (FindLiveObjects: 0.179100 ms CreateObjectMapping: 0.065000 ms MarkObjects: 1.383800 ms  DeleteObjects: 0.093800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001276 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.666 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.4 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2340.
-Total: 1.762500 ms (FindLiveObjects: 0.161800 ms CreateObjectMapping: 0.055300 ms MarkObjects: 1.449700 ms  DeleteObjects: 0.094700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001293 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -494,137 +133,374 @@ RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.680 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.4 MB.
-System memory in use after: 88.4 MB.
+System memory in use before: 88.3 MB.
+System memory in use after: 88.3 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2344.
-Total: 1.758200 ms (FindLiveObjects: 0.208000 ms CreateObjectMapping: 0.076700 ms MarkObjects: 1.379000 ms  DeleteObjects: 0.093400 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2283.
+Total: 1.698600 ms (FindLiveObjects: 0.187200 ms CreateObjectMapping: 0.069500 ms MarkObjects: 1.352000 ms  DeleteObjects: 0.088900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.972050 seconds.
+  path: Assets/Resources/Prefabs/Fruit.prefab
+  artifactKey: Guid(894d11b1311bb7942899e75362f0f048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Fruit.prefab using Guid(894d11b1311bb7942899e75362f0f048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f193b038b41a6fb1c044846f443839d6') in 0.041244 seconds
+  Import took 0.043781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.481118 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc2f7c00103de6de115216c8c1a776e9') in 0.016802 seconds
+  Import took 0.019226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.610638 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '708184331c15968261d67bc1be70d016') in 0.014117 seconds
+  Import took 0.016803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.990430 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f85b43a82ecd9ed8edf562a5ff0ac5e5') in 0.014995 seconds
+  Import took 0.017886 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001275 seconds.
+Registered in 0.001292 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.734 seconds
+- Completed reload, in  0.667 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.4 MB.
-System memory in use after: 88.4 MB.
+System memory in use before: 88.3 MB.
+System memory in use after: 88.3 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2348.
-Total: 1.801100 ms (FindLiveObjects: 0.171100 ms CreateObjectMapping: 0.065400 ms MarkObjects: 1.447400 ms  DeleteObjects: 0.116200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 713.686480 seconds.
-  path: Assets/Resources/Sprites
-  artifactKey: Guid(0241bfa18f70e014ca592d5dacd0165a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprites using Guid(0241bfa18f70e014ca592d5dacd0165a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f52941ccc677018885f4fd415a85db3') in 0.008155 seconds
-  Import took 0.016380 seconds .
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2288.
+Total: 2.004100 ms (FindLiveObjects: 0.180900 ms CreateObjectMapping: 0.059100 ms MarkObjects: 1.672500 ms  DeleteObjects: 0.090400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.033812 seconds.
-  path: Assets/Resources/Sprites/Assets tileset0.bmp
-  artifactKey: Guid(15446fb5a44bfb1479a6ac683cf3cdac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprites/Assets tileset0.bmp using Guid(15446fb5a44bfb1479a6ac683cf3cdac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5645a5f5fc53aa3e885120282105e60') in 0.101380 seconds
-  Import took 0.104780 seconds .
+  Time since last request: 452.629255 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f820607a2fc31f5d6234869c1273c9b') in 0.046108 seconds
+  Import took 0.049506 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Resources/Sprites/MicrosoftTeams-image (10).png
-  artifactKey: Guid(28edbd0bc15a0694bbbff46238cecab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprites/MicrosoftTeams-image (10).png using Guid(28edbd0bc15a0694bbbff46238cecab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45cc20c421a0ec0774d946027bcc97f') in 0.030040 seconds
-  Import took 0.032199 seconds .
+  Time since last request: 3.883346 seconds.
+  path: Assets/Resources/Audio
+  artifactKey: Guid(d329d2606272105458f7d6d5a3b87982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Audio using Guid(d329d2606272105458f7d6d5a3b87982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2574db033e262f8905e39f1ea50039d') in 0.005182 seconds
+  Import took 0.007989 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Resources/Sprites/Grapes.png
-  artifactKey: Guid(159a416eea2519544bc0cede460e7912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprites/Grapes.png using Guid(159a416eea2519544bc0cede460e7912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac078698fa5c08c941988e55e15ea94') in 0.041288 seconds
-  Import took 0.044084 seconds .
+  Time since last request: 3.441161 seconds.
+  path: Assets/Resources/Audio/sound indicator (1).wav
+  artifactKey: Guid(bd4484a5312b78940a8b0a39df1acc2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Audio/sound indicator (1).wav using Guid(bd4484a5312b78940a8b0a39df1acc2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f00419676f3dac948652c6beee8067b') in 0.035666 seconds
+  Import took 0.038099 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/Resources/Sprites/RedBat 1.PNG
-  artifactKey: Guid(0745df0f905467b4f858c5792521d562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprites/RedBat 1.PNG using Guid(0745df0f905467b4f858c5792521d562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9703109d706e8b822397c2bfdf120552') in 0.036174 seconds
-  Import took 0.039160 seconds .
+  Time since last request: 4.981058 seconds.
+  path: Assets/Resources/Audio/pitfall.wav
+  artifactKey: Guid(bd4484a5312b78940a8b0a39df1acc2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Audio/pitfall.wav using Guid(bd4484a5312b78940a8b0a39df1acc2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3af4721fb3431ed30ba803f25ce98a') in 0.011129 seconds
+  Import took 0.013622 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/Resources/Sprites/Complete.PNG
-  artifactKey: Guid(80fcc5aa6c0565f4b931f9a3c0f6b226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprites/Complete.PNG using Guid(80fcc5aa6c0565f4b931f9a3c0f6b226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8345d0e6643b34385ae7b53464269aed') in 0.039614 seconds
-  Import took 0.042155 seconds .
+  Time since last request: 0.001298 seconds.
+  path: Assets/Resources/Audio/pitfall.wav
+  artifactKey: Guid(bd4484a5312b78940a8b0a39df1acc2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Audio/pitfall.wav using Guid(bd4484a5312b78940a8b0a39df1acc2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3af4721fb3431ed30ba803f25ce98a') in 0.011691 seconds
+  Import took 0.013957 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/Resources/Sprites/raychan-aeVSLFAWDYM-unsplash.jpg
-  artifactKey: Guid(40e091bdf0c5016498893d0ab9089628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprites/raychan-aeVSLFAWDYM-unsplash.jpg using Guid(40e091bdf0c5016498893d0ab9089628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998e9f3f20881abf8b08b32968122a7c') in 0.022437 seconds
-  Import took 0.025430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Resources/Sprites/SkyBox.mat
-  artifactKey: Guid(8329cc409d3059b45a9256c794a4027f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprites/SkyBox.mat using Guid(8329cc409d3059b45a9256c794a4027f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba97d63de7088051e013692ed3e05f1') in 0.045235 seconds
-  Import took 0.048225 seconds .
+  Time since last request: 28.250201 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f93b8c8d93a9a57a0071186329e691') in 0.015338 seconds
+  Import took 0.017872 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001440 seconds.
+Registered in 0.001294 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.669 seconds
+- Completed reload, in  0.667 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.4 MB.
+System memory in use after: 88.4 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2295.
+Total: 1.575700 ms (FindLiveObjects: 0.148500 ms CreateObjectMapping: 0.051900 ms MarkObjects: 1.291400 ms  DeleteObjects: 0.082900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.190128 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbe1eddd3c921b50db1452e360894ea9') in 0.040750 seconds
+  Import took 0.043209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.248574 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d78396d21451373287b724c77045c5e') in 0.006330 seconds
+  Import took 0.008922 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001388 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.671 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.6 MB.
-System memory in use after: 88.6 MB.
+System memory in use before: 88.4 MB.
+System memory in use after: 88.4 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2398.
-Total: 1.674700 ms (FindLiveObjects: 0.159200 ms CreateObjectMapping: 0.050700 ms MarkObjects: 1.379100 ms  DeleteObjects: 0.084900 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2300.
+Total: 1.883100 ms (FindLiveObjects: 0.234500 ms CreateObjectMapping: 0.056300 ms MarkObjects: 1.501200 ms  DeleteObjects: 0.090400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.679798 seconds.
-  path: Assets/Resources/Audio
-  artifactKey: Guid(d329d2606272105458f7d6d5a3b87982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Audio using Guid(d329d2606272105458f7d6d5a3b87982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1358122779c9431984a1f1154bdff8') in 0.006683 seconds
-  Import took 0.014361 seconds .
+  Time since last request: 55.098327 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1938a71fb0a6586846a2e522f4dc0125') in 0.042608 seconds
+  Import took 0.045425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.405020 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45cec9b1a6236db6acb4fd470d5a93e6') in 0.006353 seconds
+  Import took 0.009602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002656 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45cec9b1a6236db6acb4fd470d5a93e6') in 0.008424 seconds
+  Import took 0.011060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.189695 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baea7e3f6887bffcc24ec0fcc1f82193') in 0.006500 seconds
+  Import took 0.009063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003419 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baea7e3f6887bffcc24ec0fcc1f82193') in 0.006457 seconds
+  Import took 0.009050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.946762 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24a59d9052fe5f723409db4976129933') in 0.009499 seconds
+  Import took 0.012134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001211 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24a59d9052fe5f723409db4976129933') in 0.009741 seconds
+  Import took 0.012346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.233390 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c710945923490355f7d7bb6557f5d02c') in 0.010446 seconds
+  Import took 0.013063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.212871 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b2a5590753506fa14b77859f74d4c88') in 0.005878 seconds
+  Import took 0.008402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004081 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b2a5590753506fa14b77859f74d4c88') in 0.005917 seconds
+  Import took 0.008418 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001310 seconds.
+Registered in 0.001535 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.750 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.5 MB.
+System memory in use after: 88.5 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2305.
+Total: 1.792700 ms (FindLiveObjects: 0.163800 ms CreateObjectMapping: 0.056200 ms MarkObjects: 1.486600 ms  DeleteObjects: 0.085100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.121027 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4faab4eddde206866e7e0877230bcda4') in 0.050413 seconds
+  Import took 0.053474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.838275 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b77ea1ff8cb74e9549e0905fcf6149') in 0.006475 seconds
+  Import took 0.009042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004136 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b77ea1ff8cb74e9549e0905fcf6149') in 0.007177 seconds
+  Import took 0.009747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.833263 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4293d7fb9bafdcd2f8e5f20a1d6a0151') in 0.006141 seconds
+  Import took 0.008704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004728 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4293d7fb9bafdcd2f8e5f20a1d6a0151') in 0.006282 seconds
+  Import took 0.008816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.592246 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eaca64780ae543df3a63e3c6ed1537e') in 0.012227 seconds
+  Import took 0.015074 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001429 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.661 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.5 MB.
+System memory in use after: 88.5 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2310.
+Total: 1.578900 ms (FindLiveObjects: 0.147100 ms CreateObjectMapping: 0.050500 ms MarkObjects: 1.297300 ms  DeleteObjects: 0.083100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.061161 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '847edfbdda122bcce7df7cdd8c057fc5') in 0.043355 seconds
+  Import took 0.045916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.101695 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '847edfbdda122bcce7df7cdd8c057fc5') in 0.007845 seconds
+  Import took 0.010390 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001388 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
@@ -633,63 +509,745 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.698 seconds
+- Completed reload, in  0.677 seconds
 Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.5 MB.
+System memory in use after: 88.5 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2315.
+Total: 1.746900 ms (FindLiveObjects: 0.154900 ms CreateObjectMapping: 0.052000 ms MarkObjects: 1.442900 ms  DeleteObjects: 0.096300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.981922 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f26e8be072484fb5c7e57917d77e22') in 0.042122 seconds
+  Import took 0.044751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.102801 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f26e8be072484fb5c7e57917d77e22') in 0.012588 seconds
+  Import took 0.015158 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001300 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.679 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.5 MB.
+System memory in use after: 88.5 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2320.
+Total: 2.210600 ms (FindLiveObjects: 0.177000 ms CreateObjectMapping: 0.059500 ms MarkObjects: 1.875700 ms  DeleteObjects: 0.097000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.260816 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f6794117e24fc2a314f6b00371579d9') in 0.040823 seconds
+  Import took 0.043678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.243152 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba48679e4540b544126c2c04ff150f53') in 0.006352 seconds
+  Import took 0.008938 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001444 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.671 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.5 MB.
+System memory in use after: 88.5 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2325.
+Total: 1.720900 ms (FindLiveObjects: 0.154300 ms CreateObjectMapping: 0.053000 ms MarkObjects: 1.426400 ms  DeleteObjects: 0.086600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.029344 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '672be6abf58fe4133da90e9cf5efeccb') in 0.041261 seconds
+  Import took 0.044338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.094174 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '672be6abf58fe4133da90e9cf5efeccb') in 0.006013 seconds
+  Import took 0.008537 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001249 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.665 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 88.6 MB.
 System memory in use after: 88.6 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2402.
-Total: 1.898700 ms (FindLiveObjects: 0.171300 ms CreateObjectMapping: 0.057000 ms MarkObjects: 1.566900 ms  DeleteObjects: 0.102600 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2330.
+Total: 1.666200 ms (FindLiveObjects: 0.181800 ms CreateObjectMapping: 0.066600 ms MarkObjects: 1.323600 ms  DeleteObjects: 0.093200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001550 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.803 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.6 MB.
+System memory in use after: 88.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2334.
+Total: 2.056300 ms (FindLiveObjects: 0.164900 ms CreateObjectMapping: 0.092300 ms MarkObjects: 1.704900 ms  DeleteObjects: 0.093200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1352.961087 seconds.
-  path: Assets/Scripts/MapPreparation.cs
-  artifactKey: Guid(68f76769e5e31d24db58d5cbe4734a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MapPreparation.cs using Guid(68f76769e5e31d24db58d5cbe4734a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932cab8089dc70412deafc2e161dc1dd') in 0.011319 seconds
-  Import took 0.015009 seconds .
+  Time since last request: 39.425673 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef9e7495068db7428119b54c77de4eb') in 0.049220 seconds
+  Import took 0.052151 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.016001 seconds.
-  path: Assets/Scripts/MapPreparation.cs
-  artifactKey: Guid(68f76769e5e31d24db58d5cbe4734a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MapPreparation.cs using Guid(68f76769e5e31d24db58d5cbe4734a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932cab8089dc70412deafc2e161dc1dd') in 0.002159 seconds
-  Import took 0.004758 seconds .
+  Time since last request: 13.296319 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dc01e6f06654f2f5f84f27621dd4e8c') in 0.006184 seconds
+  Import took 0.008991 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.403808 seconds.
-  path: Assets/Scripts/Manager.cs
-  artifactKey: Guid(acf22b62a09791644b6f1f778fe9d035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Manager.cs using Guid(acf22b62a09791644b6f1f778fe9d035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd4d2b36647a4c8e4fdd53cc85e30bd') in 0.004999 seconds
-  Import took 0.008005 seconds .
+  Time since last request: 0.003021 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dc01e6f06654f2f5f84f27621dd4e8c') in 0.007264 seconds
+  Import took 0.009813 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.031174 seconds.
-  path: Assets/Scripts/BatEngine.cs
-  artifactKey: Guid(c39d6de0e2ace1745960a767493c59ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/BatEngine.cs using Guid(c39d6de0e2ace1745960a767493c59ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '754129798b01138017b078ecb7b9e01e') in 0.005274 seconds
-  Import took 0.008264 seconds .
+  Time since last request: 11.099981 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee0289c498f7d263ea5a461e4226930') in 0.006144 seconds
+  Import took 0.008790 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.299308 seconds.
-  path: Assets/Scripts/GenerationSettings.cs
-  artifactKey: Guid(6d8b0a23e62d9e14086ed59bd81769ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GenerationSettings.cs using Guid(6d8b0a23e62d9e14086ed59bd81769ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583d4d477b633e489b3d56f6e658f1a4') in 0.009892 seconds
-  Import took 0.012870 seconds .
+  Time since last request: 0.003907 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee0289c498f7d263ea5a461e4226930') in 0.006162 seconds
+  Import took 0.008631 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000405 seconds.
-  path: Assets/Scripts/GenerationSettings.cs
-  artifactKey: Guid(6d8b0a23e62d9e14086ed59bd81769ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GenerationSettings.cs using Guid(6d8b0a23e62d9e14086ed59bd81769ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583d4d477b633e489b3d56f6e658f1a4') in 0.001877 seconds
-  Import took 0.004178 seconds .
+  Time since last request: 3.205196 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e72cdc0b09e3f2d61aaa41d6c4fa61') in 0.009017 seconds
+  Import took 0.012109 seconds .
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e72cdc0b09e3f2d61aaa41d6c4fa61') in 0.006452 seconds
+  Import took 0.008967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.586210 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0bd92c1e233683e89962d0d0ade4ade') in 0.006969 seconds
+  Import took 0.010009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003894 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0bd92c1e233683e89962d0d0ade4ade') in 0.007154 seconds
+  Import took 0.009983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.030636 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e07c986ebbda6703235b083521f5df') in 0.006262 seconds
+  Import took 0.009779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002893 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e07c986ebbda6703235b083521f5df') in 0.006767 seconds
+  Import took 0.009269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.585166 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f17748d6e5554ac6ce1e5c4f9fd7815') in 0.006021 seconds
+  Import took 0.008935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006463 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f17748d6e5554ac6ce1e5c4f9fd7815') in 0.007108 seconds
+  Import took 0.009666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.784887 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b48375f34bdcfdd76cbe8fdc10c2d9a4') in 0.006474 seconds
+  Import took 0.009813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003688 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b48375f34bdcfdd76cbe8fdc10c2d9a4') in 0.006445 seconds
+  Import took 0.008992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.808964 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd886af4a2d82f16bee6347e4abf89b9c') in 0.006154 seconds
+  Import took 0.008834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004025 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd886af4a2d82f16bee6347e4abf89b9c') in 0.006032 seconds
+  Import took 0.008882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.814137 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44a1b0605a731ae7d408d76bdd9a615') in 0.006866 seconds
+  Import took 0.009995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005325 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44a1b0605a731ae7d408d76bdd9a615') in 0.006336 seconds
+  Import took 0.008885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.105293 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f14e4ba65044a95ef9e9d3f7a2a1809') in 0.006011 seconds
+  Import took 0.009670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002678 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f14e4ba65044a95ef9e9d3f7a2a1809') in 0.005775 seconds
+  Import took 0.008342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.599191 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f298c0ff18b1fcce103beea62d3d137c') in 0.006149 seconds
+  Import took 0.009607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002773 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f298c0ff18b1fcce103beea62d3d137c') in 0.007462 seconds
+  Import took 0.010011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.462823 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0793f2bb2c084d476e12f86ea67d9977') in 0.006237 seconds
+  Import took 0.009666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003157 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0793f2bb2c084d476e12f86ea67d9977') in 0.005945 seconds
+  Import took 0.008528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.248206 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34430b7241d9ae79fd67bb280f8416d8') in 0.007298 seconds
+  Import took 0.010424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007510 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34430b7241d9ae79fd67bb280f8416d8') in 0.006600 seconds
+  Import took 0.009459 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001285 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.663 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.7 MB.
+System memory in use after: 88.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2339.
+Total: 1.668300 ms (FindLiveObjects: 0.166400 ms CreateObjectMapping: 0.053600 ms MarkObjects: 1.363400 ms  DeleteObjects: 0.083800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.295834 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87357afdb146ff86f757e47b1df3c4f') in 0.040689 seconds
+  Import took 0.043201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.343161 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a87e2b3c770342fd43ea9a6532aa885') in 0.009358 seconds
+  Import took 0.012453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003228 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a87e2b3c770342fd43ea9a6532aa885') in 0.012730 seconds
+  Import took 0.015243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.997987 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26facebbc0c077a2d01396697f1ce74c') in 0.015593 seconds
+  Import took 0.018175 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001497 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.760 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.7 MB.
+System memory in use after: 88.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2344.
+Total: 1.951000 ms (FindLiveObjects: 0.225400 ms CreateObjectMapping: 0.061300 ms MarkObjects: 1.568300 ms  DeleteObjects: 0.095300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.667070 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6edc766d396ff8c2371ada266f9a847c') in 0.048343 seconds
+  Import took 0.051149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.250679 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f3fbe439230c5b73f89ebc76f368f2') in 0.007016 seconds
+  Import took 0.010546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004338 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f3fbe439230c5b73f89ebc76f368f2') in 0.006110 seconds
+  Import took 0.008614 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001347 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.671 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.7 MB.
+System memory in use after: 88.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2349.
+Total: 1.645300 ms (FindLiveObjects: 0.156300 ms CreateObjectMapping: 0.054200 ms MarkObjects: 1.350700 ms  DeleteObjects: 0.083000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.312987 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6505a147a580272dba4a0134c27deda') in 0.042891 seconds
+  Import took 0.045942 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001640 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.675 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.7 MB.
+System memory in use after: 88.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2354.
+Total: 1.603700 ms (FindLiveObjects: 0.146200 ms CreateObjectMapping: 0.050600 ms MarkObjects: 1.321500 ms  DeleteObjects: 0.084600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.574813 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf66ffd7c6585c323b4f1ba84ad2c62') in 0.041962 seconds
+  Import took 0.044940 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001329 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.689 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.7 MB.
+System memory in use after: 88.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2359.
+Total: 1.609800 ms (FindLiveObjects: 0.159700 ms CreateObjectMapping: 0.050400 ms MarkObjects: 1.309000 ms  DeleteObjects: 0.089900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001503 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.687 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.7 MB.
+System memory in use after: 88.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2363.
+Total: 1.695300 ms (FindLiveObjects: 0.159900 ms CreateObjectMapping: 0.054300 ms MarkObjects: 1.396400 ms  DeleteObjects: 0.084100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.370661 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3df5699738cf9a06f40d09e2e7d9f4d3') in 0.039909 seconds
+  Import took 0.047915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.087044 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02ea77e37ddd72eb67eb8209ee2a37a1') in 0.006708 seconds
+  Import took 0.009655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003014 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02ea77e37ddd72eb67eb8209ee2a37a1') in 0.026652 seconds
+  Import took 0.029460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.418553 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c9c4b4e1cb1dc0fc584636df903df67') in 0.008660 seconds
+  Import took 0.011722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003325 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c9c4b4e1cb1dc0fc584636df903df67') in 0.009317 seconds
+  Import took 0.011789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.802002 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d97cebf3c093b98700f51b3d29e91d') in 0.008896 seconds
+  Import took 0.012051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004814 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d97cebf3c093b98700f51b3d29e91d') in 0.012709 seconds
+  Import took 0.015360 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001457 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.666 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.8 MB.
+System memory in use after: 88.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2368.
+Total: 1.840200 ms (FindLiveObjects: 0.154100 ms CreateObjectMapping: 0.048100 ms MarkObjects: 1.458000 ms  DeleteObjects: 0.179300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.827261 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c04431aff02c7d5193fd851625174289') in 0.041149 seconds
+  Import took 0.043705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045206 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c04431aff02c7d5193fd851625174289') in 0.006430 seconds
+  Import took 0.009035 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001340 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.664 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.8 MB.
+System memory in use after: 88.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2373.
+Total: 1.751600 ms (FindLiveObjects: 0.157900 ms CreateObjectMapping: 0.052200 ms MarkObjects: 1.419700 ms  DeleteObjects: 0.121200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.936218 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f506b10f8c7983a1d776a73b6e90bba') in 0.040045 seconds
+  Import took 0.042617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.901568 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2bfdf218490794450d220ca2e883064') in 0.008623 seconds
+  Import took 0.011251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002316 seconds.
+  path: Assets/Resources/Prefabs/Pitfall.prefab
+  artifactKey: Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Pitfall.prefab using Guid(bcb6b200fe8c7e14c9193f6ba103c324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2bfdf218490794450d220ca2e883064') in 0.010636 seconds
+  Import took 0.013200 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001340 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.688 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1815 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.8 MB.
+System memory in use after: 88.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2378.
+Total: 6.138800 ms (FindLiveObjects: 0.313300 ms CreateObjectMapping: 0.130400 ms MarkObjects: 5.293000 ms  DeleteObjects: 0.399100 ms)
+
