@@ -75,7 +75,7 @@ public class BatEngine : MonoBehaviour
             {
                 Manager.FruitScore++;
                 ClearObject(TriggerNumber, MapPreparation.FruitObjects, MapPreparation.FruitLocations);
-                Debug.Log("Fruits Collected: " + Manager.FruitScore + " / " + MapPreparation.FruitLocations.Length + " remaining.");
+                Debug.Log("Fruits Collected: " + Manager.FruitScore + " / " + MapPreparation.FruitLocations.Length);
 
             }
             if (CheckTarget(MapPreparation.PitfallLocations))
