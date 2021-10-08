@@ -74,11 +74,9 @@ public class GenerationSettings : MonoBehaviour
                 int RandomX = Random.Range(LeftLimit, RightLimit);
                 int RandomY = Random.Range(LowerLimit, UpperLimit);
                 Vector2 Prospect = new Vector2(RandomX, RandomY);
-                Debug.Log(Prospect);
                 if (RepeatCheck(WallLocations, Prospect) && RepeatCheck(FruitLocations, Prospect) && RepeatCheck(PitfallLocations, Prospect) && Prospect != StartPoint)
                 {
                     Locations[i] = Prospect;
-                    Debug.Log(Locations[i]);
                 }
                 else
                 {
