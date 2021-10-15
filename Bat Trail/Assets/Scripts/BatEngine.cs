@@ -13,13 +13,20 @@ public class BatEngine : MonoBehaviour
     private Vector2 Down = new Vector2(0, -1);
     private Vector2 Right = new Vector2(1, 0);
     private Vector2 None = new Vector2(0, 0);
+    private int FlagsLeft;
+    [System.NonSerialized] public static int FlagMax = 3;
     private bool Slowdown = true;
     private int TriggerNumber;
     private int StepsTaken;
     public static int StepLimit;
 
+    private void Start()
+    {
+        FlagsLeft = FlagMax;
+    }
     void Update()
     {
+        FlagCheck();
         if (!isMoving)
         {
             MoveInDirection(PullDirection());
@@ -32,6 +39,7 @@ public class BatEngine : MonoBehaviour
                 Invoke("MoveAgain", 0.25f);
             }
         }
+
     }
     private Vector3 PullDirection() // Checks user input for wasd|arrow keys, returns a string for the direction the player wants to go.
     {
@@ -66,7 +74,10 @@ public class BatEngine : MonoBehaviour
         if (Direction != None)
         {
             TargetPos = new Vector2(transform.position.x, transform.position.y) + Direction;
-            BoundsCheck();
+            if (!BoundsCheck(TargetPos))
+            {
+                TargetPos = new Vector2(transform.position.x, transform.position.y);
+            }
             if (CheckTarget(MapPreparation.WallLocations))
             {
                 TargetPos = transform.position;
@@ -96,11 +107,15 @@ public class BatEngine : MonoBehaviour
         Slowdown = true;
         isMoving = false;
     }
-    private void BoundsCheck()
+    private bool BoundsCheck(Vector2 ToCheck)
     {
-        if (TargetPos.x >= MapPreparation.RightBorder | TargetPos.x <= MapPreparation.LeftBorder | TargetPos.y >= MapPreparation.TopBorder | TargetPos.y <= MapPreparation.BottomBorder)
+        if (ToCheck.x >= MapPreparation.RightBorder | ToCheck.x <= MapPreparation.LeftBorder | ToCheck.y >= MapPreparation.TopBorder | ToCheck.y <= MapPreparation.BottomBorder)
         {
-            TargetPos = gameObject.transform.position;
+            return false;
+        }
+        else
+        {
+            return true;
         }
     }
     private bool CheckTarget(Vector2[] Target)
@@ -161,5 +176,26 @@ public class BatEngine : MonoBehaviour
         {
             Debug.Log("You've taken " + StepLimit + " steps.");
         }
+    }
+    private void FlagCheck()
+    {
+        if (Input.GetMouseButtonUp(0))
+        {
+            Vector2 CursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (BoundsCheck(CursorPos))
+            {
+                Vector2 CursorSquare = CursorSquareFind(CursorPos);
+                MapPreparation.FlagHandler(CursorSquare);
+            }
+            else
+            {
+                return;
+            }
+        }
+    }
+    private Vector2 CursorSquareFind(Vector2 ToSquare)
+    {
+        Vector2 RoundedPoint = new Vector2(Mathf.RoundToInt(ToSquare.x), Mathf.RoundToInt(ToSquare.y));
+        return RoundedPoint;
     }
 }

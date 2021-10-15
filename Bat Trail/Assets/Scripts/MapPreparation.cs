@@ -13,18 +13,24 @@ public class MapPreparation : MonoBehaviour
     public static Vector2[] WallLocations;
     public static Vector2[] FruitLocations;
     public static Vector2[] PitfallLocations;
-    private UnityEngine.Object WallPrefab;
-    private UnityEngine.Object FruitPrefab;
-    private UnityEngine.Object PitfallPrefab;
+    public static Vector2[] FlagLocations;
+    private static UnityEngine.Object WallPrefab;
+    private static UnityEngine.Object FruitPrefab;
+    private static UnityEngine.Object PitfallPrefab;
+    private static UnityEngine.Object FlagPrefab;
     public static  GameObject[] WallObjects;
     public static GameObject[] FruitObjects;
     public static  GameObject[] PitfallObjects;
+    public static GameObject[] FlagObjects;
+    private static int TargetFlag;
     void Start()
     {
         SetBorders(); //NOTE: This script will assume that the box is perfectly rounded to the grid and centered on 0, otherwise some jank might occur.
         WallObjects = new GameObject[WallLocations.Length];
         FruitObjects = new GameObject[FruitLocations.Length];
         PitfallObjects = new GameObject[PitfallLocations.Length];
+        FlagObjects = new GameObject[4 * BatEngine.FlagMax];
+        FlagLocations = new Vector2[FlagObjects.Length];
         WallHandler();
         FruitHandler();
         PitfallHandler();
@@ -53,7 +59,20 @@ public class MapPreparation : MonoBehaviour
         PitfallPrefab = Resources.Load("prefabs/Pitfall", typeof(GameObject));
         SpawnTime(PitfallLocations, PitfallPrefab, PitfallObjects);
     }
-    void SpawnTime(Vector2[] SpawnType, UnityEngine.Object Prefab, GameObject[] ObjectArray)
+    public static void FlagHandler(Vector2 TargetPos)
+    {
+        FlagPrefab = Resources.Load("prefabs/Flag", typeof(GameObject));
+        if (CheckV2Array(FlagLocations, TargetPos))
+        {
+            FlagLocations[TargetFlag] = Vector2.zero;
+            Destroy(FlagObjects[TargetFlag]);
+        }
+        else
+        {
+            PlaceFlag(TargetPos);
+        }
+    }
+    private void SpawnTime(Vector2[] SpawnType, UnityEngine.Object Prefab, GameObject[] ObjectArray)
     {
         if(SpawnType != null && Prefab!= null)
         {
@@ -63,4 +82,30 @@ public class MapPreparation : MonoBehaviour
             }
         }
     }
+    private static bool CheckV2Array(Vector2[] ArrayToBeChecked, Vector2 KeyVector)
+    {
+        for (int i = 0; i < ArrayToBeChecked.Length; i++)
+        {
+            if (ArrayToBeChecked[i] == KeyVector)
+            {
+                TargetFlag = i;
+                return true;
+            }
+        }
+        return false;
+    }
+    private static void PlaceFlag(Vector2 PlacementCoords)
+    {
+        for (int i = 0; i < FlagLocations.Length; i++)
+        {
+            Debug.Log(FlagLocations[i]);
+            if (FlagLocations[i] == Vector2.zero)
+            {
+                FlagLocations[i] = PlacementCoords;
+                FlagObjects[i] = Instantiate(FlagPrefab, PlacementCoords, Quaternion.identity) as GameObject;
+                return;
+            }
+        }
+    }
+
 }
