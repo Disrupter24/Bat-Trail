@@ -20,8 +20,14 @@ public class BatEngine : MonoBehaviour
     private int StepsTaken;
     public static int StepLimit;
 
+    public Transform pulseTransform;
+    private float range;
+    public float rangeMax;
+    public float rangeSpeed = 2f;
+
     private void Start()
     {
+        pulseTransform = transform.Find("Pulse");
         FlagsLeft = FlagMax;
     }
     void Update()
@@ -169,6 +175,8 @@ public class BatEngine : MonoBehaviour
         StepCheck();
         PlaySounds(MapPreparation.FruitObjects);
         PlaySounds(MapPreparation.PitfallObjects);
+
+        EchoEffect();
     }
     private void StepCheck()
     {
@@ -198,4 +206,16 @@ public class BatEngine : MonoBehaviour
         Vector2 RoundedPoint = new Vector2(Mathf.RoundToInt(ToSquare.x), Mathf.RoundToInt(ToSquare.y));
         return RoundedPoint;
     }
+
+    private void EchoEffect()
+    {
+        range += rangeSpeed * Time.deltaTime;
+        if(range > rangeMax)
+        {
+            range = 0f;
+        }
+        pulseTransform.localScale = new Vector3(range,range);
+    }
+
+
 }
