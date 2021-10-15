@@ -8,12 +8,16 @@ public class UI : MonoBehaviour
     public GameObject GameOver;
     public GameObject LevelComplete;
     public GameObject PLayAgainButton;
+    public GameObject CloseButton;
+    public Text CollectingPhaseText;
+    public GameObject ToturialWindow;
     public GameObject OverLay;
     public GameObject OverLay1;
     public GameObject TakeFoodWindow;
     public GameObject FruitsNumberWindow;
     public Text FlagCounts;
     public Text FruitsCounts;
+    public Text FruitsCounts2;
     public Text StepsCounts;
     public static int FlagNumber;
     public static int FruitsNumber;
@@ -40,6 +44,9 @@ public class UI : MonoBehaviour
     private void Awake()
     {
         _instance = this;
+        
+      
+       
 
     }
 
@@ -49,9 +56,19 @@ public class UI : MonoBehaviour
         LevelComplete.SetActive(false);
         PLayAgainButton.SetActive(false);
         OverLay.SetActive(false);
-        OverLay1.SetActive(false);
-        FruitsNumberWindow.SetActive(false);
+        //FruitsNumberWindow.SetActive(false);
         TakeFoodWindow.SetActive(false);
+        Toturial();
+
+    }
+
+    private void Update()
+    {
+       if (Input.GetKeyDown(KeyCode.Space))
+        {
+            AddtoFruitsCounte();
+            AddtoFlagCounte();
+        }
     }
 
 
@@ -81,8 +98,10 @@ public class UI : MonoBehaviour
     {
         FruitsNumber++;
         FruitsCounts.text = FlagNumber.ToString();
+        FruitsCounts2.text = FlagNumber.ToString();
+
     }
-   
+
 
     //Steps Counters
     public void AddtoStepsCounte()
@@ -91,8 +110,19 @@ public class UI : MonoBehaviour
         StepsCounts.text = FlagNumber.ToString();
     }
 
+    public void Toturial()
+    {
 
- 
+            if (Input.GetKey(KeyCode.Mouse0) && CloseButton)
+            {
 
+                ToturialWindow.SetActive(false);
+                 
+            }
+
+    }
+
+
+   
 
 }
