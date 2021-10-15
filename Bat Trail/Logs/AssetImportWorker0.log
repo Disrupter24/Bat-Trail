@@ -1,0 +1,645 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 12270 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\Unity Editors\2020.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Unity/Bat-Trail/Bat Trail
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56998
+Successfully changed project path to: E:/Unity/Bat-Trail/Bat Trail
+E:/Unity/Bat-Trail/Bat Trail
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 61.05 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.1f1 (77a89f25062f)
+[Subsystems] Discovering subsystems at path E:/Unity Editors/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Unity/Bat-Trail/Bat Trail/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 570 Series (ID=0x67df)
+    Vendor:   
+    VRAM:     8171 MB
+    Driver:   27.20.14501.18003
+Initialize mono
+Mono path[0] = 'E:/Unity Editors/2020.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity Editors/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Unity Editors/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity Editors/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002316 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 60.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.964 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002843 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 60.91 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.870 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1834 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.1 MB.
+System memory in use after: 87.2 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2288.
+Total: 2.834000 ms (FindLiveObjects: 0.331400 ms CreateObjectMapping: 0.092600 ms MarkObjects: 2.311000 ms  DeleteObjects: 0.097600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Resources/Sprites
+  artifactKey: Guid(0241bfa18f70e014ca592d5dacd0165a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites using Guid(0241bfa18f70e014ca592d5dacd0165a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f52941ccc677018885f4fd415a85db3') in 0.013201 seconds
+  Import took 0.023734 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 3.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 49.8 MB.
+System memory in use after: 50.0 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2288.
+Total: 2.660100 ms (FindLiveObjects: 0.401200 ms CreateObjectMapping: 0.104700 ms MarkObjects: 2.124400 ms  DeleteObjects: 0.028300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.771463 seconds.
+  path: Assets/Resources/Sprites/Animated Bats
+  artifactKey: Guid(c43feb6687e9ddd4cba164d51f9a696d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats using Guid(c43feb6687e9ddd4cba164d51f9a696d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ed24f6b0af2558206286409f9815f4b') in 0.008816 seconds
+  Import took 0.025113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 151.873680 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueBack2.png
+  artifactKey: Guid(1c33a0293ec3de84cb0c67df1bdf0648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueBack2.png using Guid(1c33a0293ec3de84cb0c67df1bdf0648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e2f06085e91f85f3e8c50c6b08ebea') in 0.235037 seconds
+  Import took 0.239296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.292553 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueBack1.png
+  artifactKey: Guid(6fe3f31dd22bb884c9b481aafd897d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueBack1.png using Guid(6fe3f31dd22bb884c9b481aafd897d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '666aeb8662609263e01aa7e3560fe15f') in 0.019729 seconds
+  Import took 0.024899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009553 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueBack1.png
+  artifactKey: Guid(6fe3f31dd22bb884c9b481aafd897d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueBack1.png using Guid(6fe3f31dd22bb884c9b481aafd897d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '666aeb8662609263e01aa7e3560fe15f') in 0.008836 seconds
+  Import took 0.012907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.742126 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenBack1.png
+  artifactKey: Guid(f47876378c9c0a14aa481543a205f49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenBack1.png using Guid(f47876378c9c0a14aa481543a205f49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '403c577cbaad63d02fa40ad3cf911664') in 0.017195 seconds
+  Import took 0.043954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.132486 seconds.
+  path: Assets/Resources/Sprites/RedBat 1.PNG
+  artifactKey: Guid(0745df0f905467b4f858c5792521d562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/RedBat 1.PNG using Guid(0745df0f905467b4f858c5792521d562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9703109d706e8b822397c2bfdf120552') in 0.025147 seconds
+  Import took 0.037470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.710698 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedBack2.png
+  artifactKey: Guid(54c79ef35bbbf9044b7e9fe8f0bd2f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedBack2.png using Guid(54c79ef35bbbf9044b7e9fe8f0bd2f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5c003db590fd93255142e351a48a9e8') in 0.024383 seconds
+  Import took 0.039229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.169457 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueBack1.png
+  artifactKey: Guid(6fe3f31dd22bb884c9b481aafd897d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueBack1.png using Guid(6fe3f31dd22bb884c9b481aafd897d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926cb0514396cd053fb86230bdc2ee83') in 0.012163 seconds
+  Import took 0.027679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.145942 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenFront2.png
+  artifactKey: Guid(6efaa7674bdb76e4db2cb30cc3e20605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenFront2.png using Guid(6efaa7674bdb76e4db2cb30cc3e20605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c379f342187adc3d8514995af6a7b3') in 0.017476 seconds
+  Import took 0.021717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.132337 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenFront2.png
+  artifactKey: Guid(6efaa7674bdb76e4db2cb30cc3e20605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenFront2.png using Guid(6efaa7674bdb76e4db2cb30cc3e20605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '382c0bf0faba812620fd7f3e800a8844') in 0.009086 seconds
+  Import took 0.013152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004592 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenFront2.png
+  artifactKey: Guid(6efaa7674bdb76e4db2cb30cc3e20605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenFront2.png using Guid(6efaa7674bdb76e4db2cb30cc3e20605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '382c0bf0faba812620fd7f3e800a8844') in 0.009450 seconds
+  Import took 0.013423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.529011 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedRight1.png
+  artifactKey: Guid(9c2bb56f13e5e4b4cb280f513fc7359e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedRight1.png using Guid(9c2bb56f13e5e4b4cb280f513fc7359e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e1adf13b1caa4170156514f663e4fda') in 0.022839 seconds
+  Import took 0.027431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002670 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedRight1.png
+  artifactKey: Guid(9c2bb56f13e5e4b4cb280f513fc7359e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedRight1.png using Guid(9c2bb56f13e5e4b4cb280f513fc7359e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e1adf13b1caa4170156514f663e4fda') in 0.009130 seconds
+  Import took 0.013184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.588356 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenFront2.png
+  artifactKey: Guid(6efaa7674bdb76e4db2cb30cc3e20605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenFront2.png using Guid(6efaa7674bdb76e4db2cb30cc3e20605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab443aefd6cf70ec00373eb2fb14db1e') in 0.015144 seconds
+  Import took 0.020101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.491699 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedLeft2.png
+  artifactKey: Guid(80e0adad3c1aa33468f0dda249a4c9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedLeft2.png using Guid(80e0adad3c1aa33468f0dda249a4c9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '125cb9453972d49c53b96d4719cd27ba') in 0.018542 seconds
+  Import took 0.023075 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010777 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedLeft2.png
+  artifactKey: Guid(80e0adad3c1aa33468f0dda249a4c9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedLeft2.png using Guid(80e0adad3c1aa33468f0dda249a4c9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '125cb9453972d49c53b96d4719cd27ba') in 0.013453 seconds
+  Import took 0.017944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.624226 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatYellowBack2.png
+  artifactKey: Guid(bf853b60c90b01f46a355d412655eefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatYellowBack2.png using Guid(bf853b60c90b01f46a355d412655eefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0c4415cbfbd3565f12105f5c66b77b1') in 0.022083 seconds
+  Import took 0.038346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.887860 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenFront2.png
+  artifactKey: Guid(6efaa7674bdb76e4db2cb30cc3e20605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenFront2.png using Guid(6efaa7674bdb76e4db2cb30cc3e20605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bccd8d40a0964242639548feb9f14306') in 0.009749 seconds
+  Import took 0.023995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.826499 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedLeft1.png
+  artifactKey: Guid(c714b6aeee9b5474296068c5436aa210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedLeft1.png using Guid(c714b6aeee9b5474296068c5436aa210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e7dd00e54b41933c1e6b48c4bd038e') in 0.021540 seconds
+  Import took 0.026349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedLeft1.png
+  artifactKey: Guid(c714b6aeee9b5474296068c5436aa210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedLeft1.png using Guid(c714b6aeee9b5474296068c5436aa210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e7dd00e54b41933c1e6b48c4bd038e') in 0.009354 seconds
+  Import took 0.013637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.859168 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueBack1.png
+  artifactKey: Guid(6fe3f31dd22bb884c9b481aafd897d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueBack1.png using Guid(6fe3f31dd22bb884c9b481aafd897d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e14d7cec920defe8f49bacbbd71d00e1') in 0.012822 seconds
+  Import took 0.017379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 130.492034 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueBack1.controller
+  artifactKey: Guid(3a8c680cc9443594bb678deb3169016d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueBack1.controller using Guid(3a8c680cc9443594bb678deb3169016d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '498af858c39f7c692cb2de02973fefa1') in 0.010134 seconds
+  Import took 0.034803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.247484 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueFront1.png
+  artifactKey: Guid(167636720ae944c4690a7d7c1525b957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueFront1.png using Guid(167636720ae944c4690a7d7c1525b957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f0f29924bb2c5804c9ee7d214c0ef89') in 0.017315 seconds
+  Import took 0.021458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.054284 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueFront1.png
+  artifactKey: Guid(167636720ae944c4690a7d7c1525b957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueFront1.png using Guid(167636720ae944c4690a7d7c1525b957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f0f29924bb2c5804c9ee7d214c0ef89') in 0.057467 seconds
+  Import took 0.064189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.681077 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueBack2.png
+  artifactKey: Guid(1c33a0293ec3de84cb0c67df1bdf0648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueBack2.png using Guid(1c33a0293ec3de84cb0c67df1bdf0648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0bd52fad1c73a793ee582cb07d63577') in 0.009990 seconds
+  Import took 0.014522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.218239 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueFront2.png
+  artifactKey: Guid(679a2ba48c0ee114bb1e3e555d52f6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueFront2.png using Guid(679a2ba48c0ee114bb1e3e555d52f6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e41d1f29904665256d2bba3531ef8b53') in 0.018463 seconds
+  Import took 0.022685 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002958 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.470 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1811 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.8 MB.
+System memory in use after: 88.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2300.
+Total: 2.691700 ms (FindLiveObjects: 0.321500 ms CreateObjectMapping: 0.094900 ms MarkObjects: 2.232700 ms  DeleteObjects: 0.041200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.907190 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueIdle1.png
+  artifactKey: Guid(e453398c7814fbf44b0fd1ff351bafc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueIdle1.png using Guid(e453398c7814fbf44b0fd1ff351bafc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c245b35ea0d2cc762062c1d35fd84f9f') in 0.082443 seconds
+  Import took 0.086522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.552500 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueIdle2.png
+  artifactKey: Guid(33c18f4c9276b1c43997ffffa3893301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueIdle2.png using Guid(33c18f4c9276b1c43997ffffa3893301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c6a05c03de7b84971e574e81bec7517') in 0.029708 seconds
+  Import took 0.043603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.296014 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueLeft1.png
+  artifactKey: Guid(33545ac60953ecd46a7ec430d6c99c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueLeft1.png using Guid(33545ac60953ecd46a7ec430d6c99c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b33f1e761106ba2194f80cc96149ebb') in 0.019273 seconds
+  Import took 0.024015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.013282 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueRight1.png
+  artifactKey: Guid(bb0368f9e486f3942a3be50d115de46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueRight1.png using Guid(bb0368f9e486f3942a3be50d115de46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5ef35fda36fa9b2f705ec5bc8c5da2') in 0.017688 seconds
+  Import took 0.030153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.613410 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenBack1.png
+  artifactKey: Guid(f47876378c9c0a14aa481543a205f49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenBack1.png using Guid(f47876378c9c0a14aa481543a205f49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3222cd1ff69fbfcfc4c2b0fe13ec0ec') in 0.013366 seconds
+  Import took 0.018153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.070862 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenFront1.png
+  artifactKey: Guid(2dcac2b4440b74a43a9d2f41be2274ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenFront1.png using Guid(2dcac2b4440b74a43a9d2f41be2274ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f8a9a8c8345b9ca2049cce2af95c0e') in 0.018219 seconds
+  Import took 0.023800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.871725 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenBack1.controller
+  artifactKey: Guid(ea0a894abae244349a7560d8b1d5bd53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenBack1.controller using Guid(ea0a894abae244349a7560d8b1d5bd53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '789cbe010644618e8f69ffe936a18c4d') in 0.006974 seconds
+  Import took 0.011292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.059535 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenBack2.png
+  artifactKey: Guid(50467a8034f046647b4f7dbd43b57ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenBack2.png using Guid(50467a8034f046647b4f7dbd43b57ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cfd834e75a5371bcbb601ac1dacb662') in 0.018482 seconds
+  Import took 0.028440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.377775 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenFront1.controller
+  artifactKey: Guid(0f532eca96e49f94cb4cf71a6e0975ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenFront1.controller using Guid(0f532eca96e49f94cb4cf71a6e0975ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7f44a00cf5bb2d1947921331331032a') in 0.007449 seconds
+  Import took 0.012446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011666 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenFront1.controller
+  artifactKey: Guid(0f532eca96e49f94cb4cf71a6e0975ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenFront1.controller using Guid(0f532eca96e49f94cb4cf71a6e0975ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7f44a00cf5bb2d1947921331331032a') in 0.003966 seconds
+  Import took 0.009049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.711900 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenIdle1.png
+  artifactKey: Guid(58d424733ca551c4dbf3d246390eeb67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenIdle1.png using Guid(58d424733ca551c4dbf3d246390eeb67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '469a70083630d512e22c77ad20a29d6e') in 0.024140 seconds
+  Import took 0.029466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.282153 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenIdle2.png
+  artifactKey: Guid(373a3e647665e8d479b23b6d9dc44bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenIdle2.png using Guid(373a3e647665e8d479b23b6d9dc44bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e39c2c2da26befc53ad1cd6f5dec9def') in 0.020529 seconds
+  Import took 0.026199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003089 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenIdle2.png
+  artifactKey: Guid(373a3e647665e8d479b23b6d9dc44bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenIdle2.png using Guid(373a3e647665e8d479b23b6d9dc44bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e39c2c2da26befc53ad1cd6f5dec9def') in 0.010067 seconds
+  Import took 0.014558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.816791 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenLeft1.png
+  artifactKey: Guid(d4587de5c25a8694db3891ac32a64daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenLeft1.png using Guid(d4587de5c25a8694db3891ac32a64daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5ae0b09cf9da52c19e09e3ea584aeb') in 0.019132 seconds
+  Import took 0.023344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.996737 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenLeft2.png
+  artifactKey: Guid(0c46ff410c60d1545a31aee20034e859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenLeft2.png using Guid(0c46ff410c60d1545a31aee20034e859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db02fb90bf1280f2f4bd9817a53dd053') in 0.019827 seconds
+  Import took 0.090652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.735499 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenRight1.png
+  artifactKey: Guid(0286877ece1ce764da761cd7ddaa4b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenRight1.png using Guid(0286877ece1ce764da761cd7ddaa4b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '285d74c2282bf4e34c8849483f129a4f') in 0.018043 seconds
+  Import took 0.023252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.157424 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatGreenRight2.png
+  artifactKey: Guid(5c568ef77802d784c9599ce4705cceed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatGreenRight2.png using Guid(5c568ef77802d784c9599ce4705cceed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f030fd21017c46858e30e227abd703b') in 0.019123 seconds
+  Import took 0.023464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.902155 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedBack1.png
+  artifactKey: Guid(03afe69ab79a07c4dac3a445f00f2641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedBack1.png using Guid(03afe69ab79a07c4dac3a445f00f2641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca2158ef5233e0b97d79a51a631cc678') in 0.017938 seconds
+  Import took 0.022707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.630097 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedBack2.png
+  artifactKey: Guid(54c79ef35bbbf9044b7e9fe8f0bd2f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedBack2.png using Guid(54c79ef35bbbf9044b7e9fe8f0bd2f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '009dbf5414c84149a5286f982e317351') in 0.010756 seconds
+  Import took 0.014901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.712316 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedFront1.png
+  artifactKey: Guid(6f26dc0a789febe479f8921a102922e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedFront1.png using Guid(6f26dc0a789febe479f8921a102922e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5fc54442079a8d45de4160332a04372') in 0.016695 seconds
+  Import took 0.021282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.294237 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedIdle1.png
+  artifactKey: Guid(357219f7ddb836649ad4f8afb3e3b3ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedIdle1.png using Guid(357219f7ddb836649ad4f8afb3e3b3ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26fc86a5f450318aed92076a2cf389eb') in 0.017275 seconds
+  Import took 0.021936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.632524 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedLeft2.png
+  artifactKey: Guid(80e0adad3c1aa33468f0dda249a4c9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedLeft2.png using Guid(80e0adad3c1aa33468f0dda249a4c9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04b809ab2d109008e6a26875f5208af5') in 0.014762 seconds
+  Import took 0.019061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.344271 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedRight1.png
+  artifactKey: Guid(9c2bb56f13e5e4b4cb280f513fc7359e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedRight1.png using Guid(9c2bb56f13e5e4b4cb280f513fc7359e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de32d991f5b029cc8571d480b689d66d') in 0.012202 seconds
+  Import took 0.019475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.415179 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedRight2.png
+  artifactKey: Guid(a88a4a48cda3e714c9e4fd433754eb97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedRight2.png using Guid(a88a4a48cda3e714c9e4fd433754eb97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf83822c5977099c619bed6079eaeba') in 0.018116 seconds
+  Import took 0.030065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002950 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedRight2.png
+  artifactKey: Guid(a88a4a48cda3e714c9e4fd433754eb97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedRight2.png using Guid(a88a4a48cda3e714c9e4fd433754eb97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf83822c5977099c619bed6079eaeba') in 0.009493 seconds
+  Import took 0.013742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.111443 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatYellowBack1.png
+  artifactKey: Guid(6246863f93a4fbc4088093f2d79fe98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatYellowBack1.png using Guid(6246863f93a4fbc4088093f2d79fe98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8585e39069a6eee6427f56ffd4eede95') in 0.019365 seconds
+  Import took 0.024137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.640261 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatYellowBack2.png
+  artifactKey: Guid(bf853b60c90b01f46a355d412655eefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatYellowBack2.png using Guid(bf853b60c90b01f46a355d412655eefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdf69c64e393f2b88c66460db709ed9c') in 0.010380 seconds
+  Import took 0.015110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.680822 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatYellowFront1.png
+  artifactKey: Guid(f23ad68b99088cc46902a1428c437b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatYellowFront1.png using Guid(f23ad68b99088cc46902a1428c437b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174444760074219ae40c584b23bc6ae9') in 0.019448 seconds
+  Import took 0.025611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003207 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatYellowFront1.png
+  artifactKey: Guid(f23ad68b99088cc46902a1428c437b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatYellowFront1.png using Guid(f23ad68b99088cc46902a1428c437b8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174444760074219ae40c584b23bc6ae9') in 0.008939 seconds
+  Import took 0.013285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.620353 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatYellowFront2.png
+  artifactKey: Guid(3e2d16e600044f844854c9cb6e15f4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatYellowFront2.png using Guid(3e2d16e600044f844854c9cb6e15f4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '787866e7abd5fd552206d0fbf8eb566a') in 0.018221 seconds
+  Import took 0.022854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000829 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatYellowFront2.png
+  artifactKey: Guid(3e2d16e600044f844854c9cb6e15f4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatYellowFront2.png using Guid(3e2d16e600044f844854c9cb6e15f4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '787866e7abd5fd552206d0fbf8eb566a') in 0.012331 seconds
+  Import took 0.016542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.180330 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatYellowIdle1.png
+  artifactKey: Guid(d46bd51b83cee3d4cb3818ffca31b8e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatYellowIdle1.png using Guid(d46bd51b83cee3d4cb3818ffca31b8e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c31e159adec2eb9956b5b4cb55639d86') in 0.018985 seconds
+  Import took 0.023665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.521210 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatYellowIdle2.png
+  artifactKey: Guid(9284feb1dc50a974eac6d8bcbaf705bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatYellowIdle2.png using Guid(9284feb1dc50a974eac6d8bcbaf705bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '937a16b7f727f60d64f3468f6b24e593') in 0.017611 seconds
+  Import took 0.031144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002580 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatYellowIdle2.png
+  artifactKey: Guid(9284feb1dc50a974eac6d8bcbaf705bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatYellowIdle2.png using Guid(9284feb1dc50a974eac6d8bcbaf705bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '937a16b7f727f60d64f3468f6b24e593') in 0.008918 seconds
+  Import took 0.012970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.879963 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatYellowLeft1.png
+  artifactKey: Guid(4933b176de478eb4bb0ef3a3f6ea4ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatYellowLeft1.png using Guid(4933b176de478eb4bb0ef3a3f6ea4ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b4356a7dfdb0df95ddcc23f14c48c3') in 0.018537 seconds
+  Import took 0.023546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.421769 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatYellowRight1.png
+  artifactKey: Guid(d8b9bf6739c86504f8a35f24d449740e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatYellowRight1.png using Guid(d8b9bf6739c86504f8a35f24d449740e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04e4292586152768783d44786a94a97') in 0.017419 seconds
+  Import took 0.022217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.909918 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatYellowRight2.png
+  artifactKey: Guid(4d8380aa128fd444aa2a84540a77703a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatYellowRight2.png using Guid(4d8380aa128fd444aa2a84540a77703a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60573dd320bbb355766e18c8ae4f2b8d') in 0.021868 seconds
+  Import took 0.033445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.174378 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatBlueIdle1.controller
+  artifactKey: Guid(dca20efdc4a82ca468189a110c20ddb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatBlueIdle1.controller using Guid(dca20efdc4a82ca468189a110c20ddb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c185955247d440e2161f5ce920c2cae') in 0.005254 seconds
+  Import took 0.010058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.617563 seconds.
+  path: Assets/Resources/Sprites/Animated Bats/BatRedRight1.controller
+  artifactKey: Guid(1a8259d5280f8824fb97391b81e4efa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Animated Bats/BatRedRight1.controller using Guid(1a8259d5280f8824fb97391b81e4efa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57781bd66d2fdaa2654d0d58353c6160') in 0.008211 seconds
+  Import took 0.025055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2426.424896 seconds.
+  path: Assets/Scripts/BatEngine.cs
+  artifactKey: Guid(c39d6de0e2ace1745960a767493c59ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BatEngine.cs using Guid(c39d6de0e2ace1745960a767493c59ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a94b876a23b3af7477a202bb73e767') in 0.015564 seconds
+  Import took 0.023617 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
