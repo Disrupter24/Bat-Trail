@@ -18,6 +18,7 @@ public class GenerationSettings : MonoBehaviour
     [SerializeField] private Transform BatPosition;
     [SerializeField] private MapPreparation MapPreparation;
     [SerializeField] private int StepLimit;
+    [SerializeField] public static int[] Requirements;
     private int LeftLimit;
     private int RightLimit;
     private int LowerLimit;

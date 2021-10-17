@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class BatEngine : MonoBehaviour
 {
@@ -15,31 +16,36 @@ public class BatEngine : MonoBehaviour
     private Vector2 None = new Vector2(0, 0);
     private int FlagsLeft;
     [System.NonSerialized] public static int FlagMax = 3;
+    [System.NonSerialized] public static bool BatRun = true;
     private bool Slowdown = true;
     private int TriggerNumber;
     private int StepsTaken;
     public static int StepLimit;
+    public GameObject DeathScreen;
+    public Text FruitCounter;
 
-    private void Start()
+    private void Awake()
     {
         FlagsLeft = FlagMax;
     }
     void Update()
     {
-        FlagCheck();
-        if (!isMoving)
+        if (BatRun)
         {
-            MoveInDirection(PullDirection());
-        }
-        else
-        {
-            if (Slowdown)
+            FlagCheck();
+            if (!isMoving)
             {
-                Slowdown = false;
-                Invoke("MoveAgain", 0.25f);
+                MoveInDirection(PullDirection());
+            }
+            else
+            {
+                if (Slowdown)
+                {
+                    Slowdown = false;
+                    Invoke("MoveAgain", 0.25f);
+                }
             }
         }
-
     }
     private Vector3 PullDirection() // Checks user input for wasd|arrow keys, returns a string for the direction the player wants to go.
     {
@@ -84,16 +90,16 @@ public class BatEngine : MonoBehaviour
             }
             if (CheckTarget(MapPreparation.FruitLocations))
             {
-                Manager.FruitScore++;
+                Manager.FruitScore[Manager.PlayerTurn]++;
                 ClearObject(TriggerNumber, MapPreparation.FruitObjects, MapPreparation.FruitLocations);
-                Debug.Log("Fruits Collected: " + Manager.FruitScore + " / " + MapPreparation.FruitLocations.Length);
+                FruitCounter.text = Manager.FruitScore[Manager.PlayerTurn].ToString();
 
             }
             if (CheckTarget(MapPreparation.PitfallLocations))
             {
                 ClearObject(TriggerNumber, MapPreparation.PitfallObjects, MapPreparation.PitfallLocations);
                 Debug.Log("Stepped on Pitfall");
-                //EndTurn();
+                EndTurn();
             }
             if (TargetPos != new Vector2 (transform.position.x, transform.position.y)) // This script will be executed only when the player moves successfully (is not blocked).
             {
@@ -197,5 +203,10 @@ public class BatEngine : MonoBehaviour
     {
         Vector2 RoundedPoint = new Vector2(Mathf.RoundToInt(ToSquare.x), Mathf.RoundToInt(ToSquare.y));
         return RoundedPoint;
+    }
+    private void EndTurn()
+    {
+        BatRun = false;
+        DeathScreen.SetActive(true);
     }
 }
