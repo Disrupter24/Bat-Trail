@@ -5,12 +5,13 @@ using UnityEngine;
 public class GenerationSettings : MonoBehaviour
 {
     [SerializeField] private bool LoadPreset;
+    [System.NonSerialized] public int MapToLoad;
     [SerializeField] private Vector2 RandomGridSize;
     [SerializeField] private int RandomWallCount;
     [SerializeField] private int RandomFruitCount;
     [SerializeField] private int RandomPitfallCount;
     [SerializeField] private Vector2 GridSize; // Must be odd numbers or things break
-    [SerializeField] private Vector2 StartPoint;
+    public static Vector2 StartPoint;
     [SerializeField] private Vector2[] WallLocations;
     [SerializeField] private Vector2[] FruitLocations;
     [SerializeField] private Vector2[] PitfallLocations;

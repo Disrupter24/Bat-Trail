@@ -67,8 +67,19 @@ public class ShareMenu : MonoBehaviour
     }
     public void Submit()
     {
+        if (StashAmount != 0)
+        {
+            Manager.PlayerDidStash[Manager.PlayerTurn] = true;
+        }
+        else
+        {
+            Manager.PlayerDidStash[Manager.PlayerTurn] = false;
+        }
         Manager.StashCount[Manager.PlayerTurn] = Manager.StashCount[Manager.PlayerTurn] + StashAmount;
         Manager.SharedFruitTotal += ShareAmount;
+        Manager.PlayerGone[Manager.PlayerTurn] = true;
+        gameObject.SetActive(false);
+        Manager.NextPlayerCheck();
     }
     private void UpdateText()
     {
