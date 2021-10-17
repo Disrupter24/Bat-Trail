@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UI : MonoBehaviour
 {
@@ -11,9 +12,9 @@ public class UI : MonoBehaviour
     public GameObject CloseButton;
     public Text CollectingPhaseText;
     public GameObject ToturialWindow;
-    public GameObject OverLay;
+   // public GameObject OverLay;
     public GameObject OverLay1;
-    public GameObject TakeFoodWindow;
+    //public GameObject TakeFoodWindow;
     public GameObject FruitsNumberWindow;
     public Text FlagCounts;
     public Text FruitsCounts;
@@ -55,9 +56,9 @@ public class UI : MonoBehaviour
         GameOver.SetActive(false);
         LevelComplete.SetActive(false);
         PLayAgainButton.SetActive(false);
-        OverLay.SetActive(false);
+       // OverLay.SetActive(false);
         //FruitsNumberWindow.SetActive(false);
-        TakeFoodWindow.SetActive(false);
+      //  TakeFoodWindow.SetActive(false);
         Toturial();
 
     }
@@ -121,6 +122,7 @@ public class UI : MonoBehaviour
             }
 
     }
+    
 
 
    

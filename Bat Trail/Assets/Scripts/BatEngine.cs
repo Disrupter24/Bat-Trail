@@ -1,37 +1,49 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class BatEngine : MonoBehaviour
 {
-    [SerializeField] public Vector3 TargetPos;
+    [System.NonSerialized] public Vector2 TargetPos;
     private bool isMoving;
-    private Vector3 Up = new Vector3(0, 1, 0);
-    private Vector3 Left = new Vector3(-1, 0, 0);
-    private Vector3 Down = new Vector3(0, -1, 0);
-    private Vector3 Right = new Vector3(1, 0, 0);
-    private Vector3 None = new Vector3(0, 0, 0);
+    private Vector2 Up = new Vector2(0, 1);
+    private Vector2 Left = new Vector2(-1, 0);
+    private Vector2 Down = new Vector2(0, -1);
+    private Vector2 Right = new Vector2(1, 0);
+    private Vector2 None = new Vector2(0, 0);
+    private int FlagsLeft;
+    [System.NonSerialized] public static int FlagMax = 3;
+    [System.NonSerialized] public static bool BatRun = true;
     private bool Slowdown = true;
-<<<<<<< Updated upstream
-=======
     private int TriggerNumber;
     private int StepsTaken;
     public static int StepLimit;
->>>>>>> Stashed changes
+    public GameObject DeathScreen;
+    public Text FruitCounter;
 
+    private void Awake()
+    {
+        FlagsLeft = FlagMax;
+    }
     void Update()
     {
-        if (!isMoving)
+        if (BatRun)
         {
-            MoveInDirection(PullDirection());
-        }
-        else
-        {
-            if (Slowdown)
+            FlagCheck();
+            if (!isMoving)
             {
-                Slowdown = false;
-                Invoke("MoveAgain", 0.25f);
+                MoveInDirection(PullDirection());
+            }
+            else
+            {
+                if (Slowdown)
+                {
+                    Slowdown = false;
+                    Invoke("MoveAgain", 0.25f);
+                }
             }
         }
     }
@@ -63,15 +75,37 @@ public class BatEngine : MonoBehaviour
         }
     }
 
-    private void MoveInDirection(Vector3 Direction)
-    {
-        TargetPos = transform.position + Direction;
-        WallCheck();
-        
-        transform.DOMove(TargetPos, 0.2f);
+    private void MoveInDirection(Vector2 Direction)
+    {        
         if (Direction != None)
         {
-            OnMove();
+            TargetPos = new Vector2(transform.position.x, transform.position.y) + Direction;
+            if (!BoundsCheck(TargetPos))
+            {
+                TargetPos = new Vector2(transform.position.x, transform.position.y);
+            }
+            if (CheckTarget(MapPreparation.WallLocations))
+            {
+                TargetPos = transform.position;
+            }
+            if (CheckTarget(MapPreparation.FruitLocations))
+            {
+                Manager.FruitScore[Manager.PlayerTurn]++;
+                ClearObject(TriggerNumber, MapPreparation.FruitObjects, MapPreparation.FruitLocations);
+                FruitCounter.text = Manager.FruitScore[Manager.PlayerTurn].ToString();
+
+            }
+            if (CheckTarget(MapPreparation.PitfallLocations))
+            {
+                ClearObject(TriggerNumber, MapPreparation.PitfallObjects, MapPreparation.PitfallLocations);
+                Debug.Log("Stepped on Pitfall");
+                EndTurn();
+            }
+            if (TargetPos != new Vector2 (transform.position.x, transform.position.y)) // This script will be executed only when the player moves successfully (is not blocked).
+            {
+                OnMove();
+            }    
+            transform.DOMove(TargetPos, 0.2f);
         }
     }
     private void MoveAgain()
@@ -79,49 +113,101 @@ public class BatEngine : MonoBehaviour
         Slowdown = true;
         isMoving = false;
     }
+    private bool BoundsCheck(Vector2 ToCheck)
+    {
+        if (ToCheck.x >= MapPreparation.RightBorder | ToCheck.x <= MapPreparation.LeftBorder | ToCheck.y >= MapPreparation.TopBorder | ToCheck.y <= MapPreparation.BottomBorder)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    private bool CheckTarget(Vector2[] Target)
+    {
+        if (Target != null)
+        {
+            for (int i = 0; i < Target.Length; i++)
+            {
+                if (TargetPos == Target[i])
+                {
+                    TriggerNumber = i;
+                    return true;
+                }
+            }
+            return false;
+        }
+        else
+        {
+            return false;
+        }
+        
+    }
+    private void ClearObject(int ObjectToClear, GameObject[]ArrayToClear, Vector2[] VectorArrayToClear)
+    {
+        if (ArrayToClear[ObjectToClear].GetComponent<AudioSource>() != null)
+        {
+            ArrayToClear[ObjectToClear].GetComponent<AudioSource>().enabled = false;
+        }
+        if (ArrayToClear[ObjectToClear].GetComponent<SpriteRenderer>() != null)
+        {
+           ArrayToClear[ObjectToClear].GetComponent<SpriteRenderer>().enabled = true;
+        }
+        for (int i = ObjectToClear; i < ArrayToClear.Length - 1; i++)
+        {
+            VectorArrayToClear[i] = VectorArrayToClear[i + 1];
+            ArrayToClear[i] = ArrayToClear[i + 1];
+        }
+        Array.Resize<Vector2>(ref VectorArrayToClear, VectorArrayToClear.Length - 1);
+        Array.Resize<GameObject>(ref ArrayToClear, ArrayToClear.Length - 1);
+    }
+    private void PlaySounds(GameObject[] TargetArray)
+    {
+        for (int i = 0; i < TargetArray.Length; i++)
+        {
+            TargetArray[i].GetComponent<AudioSource>().Play();
+        }
+    }
     private void OnMove()
     {
-        BoundsCheck();
+        StepsTaken++;
+        StepCheck();
+        PlaySounds(MapPreparation.FruitObjects);
+        PlaySounds(MapPreparation.PitfallObjects);
     }
-    private void WallCheck()
+    private void StepCheck()
     {
-        if (TargetPos.x >= BoundsFinder.RightBorder)
-        {
-            TargetPos = new Vector2(BoundsFinder.RightBorder - 1, TargetPos.y);
-        }
-        else if (TargetPos.x <= BoundsFinder.LeftBorder)
-        {
-            TargetPos = new Vector2(BoundsFinder.LeftBorder + 1, TargetPos.y);
-        }
-<<<<<<< Updated upstream
-        else if (TargetPos.y >= BoundsFinder.TopBorder)
-=======
-        if (MapPreparation.FruitObjects[FruitToClear].GetComponent<SpriteRenderer>() != null)
-        {
-            MapPreparation.FruitObjects[FruitToClear].GetComponent<SpriteRenderer>().enabled = false;
-        }
-        for (int i = FruitToClear; i < MapPreparation.FruitLocations.Length - 1; i++)
->>>>>>> Stashed changes
-        {
-            TargetPos = new Vector2(TargetPos.x, BoundsFinder.TopBorder - 1);
-        }
-        else if (TargetPos.y <= BoundsFinder.BottomBorder)
-        {
-            TargetPos = new Vector2(TargetPos.x, BoundsFinder.BottomBorder + 1);
-        }
-    }
-    private void BoundsCheck()
-    {
-<<<<<<< Updated upstream
-        if (transform.position.x > BoundsFinder.RightBorder)
-        {
-            transform.position = new Vector2(BoundsFinder.RightBorder - 1, transform.position.y);
-            Debug.Log("Hit Wall, moving back");
-=======
         if (StepsTaken == StepLimit)
         {
             Debug.Log("You've taken " + StepLimit + " steps.");
->>>>>>> Stashed changes
         }
+    }
+    private void FlagCheck()
+    {
+        if (Input.GetMouseButtonUp(0))
+        {
+            Vector2 CursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (BoundsCheck(CursorPos))
+            {
+                Vector2 CursorSquare = CursorSquareFind(CursorPos);
+                MapPreparation.FlagHandler(CursorSquare);
+            }
+            else
+            {
+                return;
+            }
+        }
+    }
+    private Vector2 CursorSquareFind(Vector2 ToSquare)
+    {
+        Vector2 RoundedPoint = new Vector2(Mathf.RoundToInt(ToSquare.x), Mathf.RoundToInt(ToSquare.y));
+        return RoundedPoint;
+    }
+    private void EndTurn()
+    {
+        BatRun = false;
+        DeathScreen.SetActive(true);
+        DeathScreen.GetComponent<ShareMenu>().Cycle();
     }
 }
