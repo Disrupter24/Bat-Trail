@@ -208,5 +208,6 @@ public class BatEngine : MonoBehaviour
     {
         BatRun = false;
         DeathScreen.SetActive(true);
+        DeathScreen.GetComponent<ShareMenu>().Cycle();
     }
 }

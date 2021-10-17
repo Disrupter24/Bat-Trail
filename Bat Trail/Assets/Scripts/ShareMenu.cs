@@ -16,7 +16,7 @@ public class ShareMenu : MonoBehaviour
     public GameObject ToShareButton;
     public Sprite OnSprite;
     public Sprite OffSprite;
-    private void Awake()
+    public void Cycle()
     {
         ToStashButton.GetComponent<Image>().sprite = OffSprite;
         FruitTotal = Manager.FruitScore[Manager.PlayerTurn];
@@ -25,7 +25,7 @@ public class ShareMenu : MonoBehaviour
             //NoFruit
         }
         StashAmount = FruitTotal;
-        ShareAmount = FruitTotal - StashAmount;
+        ShareAmount = 0;
         UpdateText();
     }
 
@@ -78,10 +78,10 @@ public class ShareMenu : MonoBehaviour
         Manager.StashCount[Manager.PlayerTurn] = Manager.StashCount[Manager.PlayerTurn] + StashAmount;
         Manager.SharedFruitTotal += ShareAmount;
         Manager.PlayerGone[Manager.PlayerTurn] = true;
-        gameObject.SetActive(false);
         Manager.NextPlayerCheck();
+        gameObject.SetActive(false);
     }
-    private void UpdateText()
+    public void UpdateText()
     {
         TotalText.text = FruitTotal.ToString();
         ShareText.text = ShareAmount.ToString();

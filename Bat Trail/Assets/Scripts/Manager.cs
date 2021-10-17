@@ -40,10 +40,11 @@ public class Manager : MonoBehaviour
     {
         if (!DoneCheck())
         {
+            int counter = 0;
             int i = 0;
-            while (PlayerGone[i] == true)
+            while (PlayerGone[i] == true && counter < 1000)
             {
-                i = Random.Range(0, 3);
+                i = Random.Range(0, 4);
             }
             PlayerTurn = i;
             NextPlayer();
@@ -70,10 +71,21 @@ public class Manager : MonoBehaviour
         string skinstring = "sprites/Bat" + PlayerTurn.ToString();
         GameObject.Find("Bat/BatSprite").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(skinstring);
         GameObject.Find("Bat").transform.position = GenerationSettings.StartPoint;
+        Debug.Log(Manager.PlayerTurn + " is up to bat!");
         BatEngine.BatRun = true;
+        GameObject.Find("Bat").GetComponent<BatEngine>().FruitCounter.text = FruitScore[PlayerTurn].ToString();
     }
     public static void NextLevel()
     {
-        Debug.Log("all players have gone");
+        Debug.Log("All players have gone!");
+        Debug.Log(SharedFruitTotal);
+        Debug.Log(StashCount[0]);
+        Debug.Log(PlayerDidStash[0]);
+        Debug.Log(StashCount[1]);
+        Debug.Log(PlayerDidStash[1]);
+        Debug.Log(StashCount[2]);
+        Debug.Log(PlayerDidStash[2]);
+        Debug.Log(StashCount[3]);
+        Debug.Log(PlayerDidStash[3]);
     }
 }
