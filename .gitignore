@@ -35,3 +35,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Bat Trail/Logs/AssetImportWorker0.log
+Bat Trail/Logs/shadercompiler-AssetImportWorker0.log
+Bat Trail/Logs/shadercompiler-UnityShaderCompiler.exe0.log
