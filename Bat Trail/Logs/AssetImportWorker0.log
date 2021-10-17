@@ -120,3 +120,34 @@ Received Import Request.
 Start importing Assets/Scripts/BatEngine.cs using Guid(c39d6de0e2ace1745960a767493c59ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a94b876a23b3af7477a202bb73e767') in 0.001636 seconds
   Import took 0.004073 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001354 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.723 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1818 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.3 MB.
+System memory in use after: 89.3 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2296.
+Total: 1.876900 ms (FindLiveObjects: 0.163400 ms CreateObjectMapping: 0.056900 ms MarkObjects: 1.557600 ms  DeleteObjects: 0.098100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 141.985709 seconds.
+  path: Assets/Scripts/BatEngine.cs
+  artifactKey: Guid(c39d6de0e2ace1745960a767493c59ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BatEngine.cs using Guid(c39d6de0e2ace1745960a767493c59ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9fc51c5ba0742de74e245b6c09c4a8f') in 0.006420 seconds
+  Import took 0.008855 seconds .
+
