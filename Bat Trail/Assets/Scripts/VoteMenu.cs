@@ -28,19 +28,19 @@ public class VoteMenu : MonoBehaviour
             {
                 Sprites[i].color = Color.gray;
                 Buttons[i].SetActive(false);
-                Buttons[i].transform.GetChild(0).GetComponent<Text>().enabled = false;
+                Buttons[i].transform.GetChild(0).gameObject.GetComponent<Text>().enabled = false;
             }
             else
             {
                 Sprites[i].color = Color.white;
                 Buttons[i].SetActive(true);
-                Buttons[i].transform.GetChild(0).GetComponent<Text>().enabled = true;
+                Buttons[i].transform.GetChild(0).gameObject.GetComponent<Text>().enabled = true;
             }
             if (Manager.PlayerDidDie[i])
             {
                 Sprites[i].color = Color.black;
                 Buttons[i].SetActive(false);
-                Buttons[i].transform.GetChild(0).GetComponent<Text>().text = "R.I.P.";
+                Buttons[i].transform.GetChild(0).gameObject.GetComponent<Text>().text = "R.I.P.";
             }
             if(Manager.PlayerDidDie[i] | Manager.PlayerLeftPack[i])
             {
@@ -129,10 +129,12 @@ public class VoteMenu : MonoBehaviour
         if (Manager.PlayerDidStash[CalledOutPlayer])
         {
             Manager.PlayerLeftPack[CalledOutPlayer] = true;
+            Debug.Log("Player " + CalledOutPlayer + " has left the pack.");
         }
         else
         {
             Manager.PlayerLeftPack[CallingOutPlayer] = true;
+            Debug.Log("Player " + CallingOutPlayer + " has left the pack.");
         }
         LoadMenu();
     }

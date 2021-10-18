@@ -112,5 +112,33 @@ public class MapPreparation : MonoBehaviour
             }
         }
     }
+    public static void StragglerPrep()
+    {
+        GameObject[] Pitfalls;
+        GameObject[] Fruits;
+        Pitfalls = GameObject.FindGameObjectsWithTag("Pitfall");
+        Fruits = GameObject.FindGameObjectsWithTag("Fruit");
+        for (int i = 0; i < FlagObjects.Length; i++)
+        {
+            if(FlagObjects[i] != null)
+            {
+                Destroy(FlagObjects[i].gameObject);
+            }
+        }
+        for (int i = 0; i < Pitfalls.Length; i++)
+        {
+            if (Pitfalls[i].GetComponent<SpriteRenderer>().enabled == true)
+            {
+                Destroy(Pitfalls[i].gameObject);
+            }
+        }
+        for (int i = 0; i < Fruits.Length; i++)
+        {
+            if (Fruits[i].GetComponent<SpriteRenderer>().enabled == true)
+            {
+                Destroy(Fruits[i].gameObject);
+            }
+        }
+    }
 
 }

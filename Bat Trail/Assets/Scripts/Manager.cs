@@ -50,10 +50,12 @@ public class Manager : MonoBehaviour
                 i = Random.Range(0, 4);
             }
             PlayerTurn = i;
+            Debug.Log("Roll 1 Pulled Player " + (PlayerTurn + 1));
             NextPlayer();
         }
         else if (!PackDoneCheck())
         {
+            Debug.Log("All Pack have gone");
             PackDone();
             int i = 0;
             while (PlayerGone[i] == true | PlayerDidDie[i])
@@ -61,6 +63,7 @@ public class Manager : MonoBehaviour
                 i = Random.Range(0, 4);
             }
             PlayerTurn = i;
+            Debug.Log("Roll 2 Pulled Player " + (PlayerTurn + 1));
             NextPlayer();
         }
         else
@@ -78,7 +81,7 @@ public class Manager : MonoBehaviour
     }
     public static void PackDone()
     {
-        Debug.Log("All non-pack players have gone");
+        MapPreparation.StragglerPrep();
     }
     public static bool DoneCheck()
     {
@@ -104,13 +107,12 @@ public class Manager : MonoBehaviour
     }
     public static void NextPlayer()
     {
-        string skinstring = "sprites/Bat" + PlayerTurn.ToString();
-        GameObject.Find("Bat/BatSprite").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(skinstring);
-        Debug.Log("Loading Skin: " + skinstring);
         if (Bat == null)
         {
             Bat = GameObject.Find("Bat");
         }
+        Bat.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = Bat.GetComponent<BatEngine>().BatSprites[PlayerTurn];
+        Debug.Log("Fetched Sprite " + (PlayerTurn + 1));
         Bat.transform.position = GenerationSettings.StartPoint;
         Debug.Log("Player " + (PlayerTurn+1) + " is up to bat!");
         FruitScore[PlayerTurn] = 0;
@@ -138,7 +140,7 @@ public class Manager : MonoBehaviour
             MapNumber++;
             SceneManager.LoadScene(1);
             GenerationSettings.LoadMap();
-            NextPlayer();
+            NextPlayerCheck();
         }
         else
         {
