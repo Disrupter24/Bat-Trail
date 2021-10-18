@@ -23,6 +23,7 @@ public class BatEngine : MonoBehaviour
     public static int StepLimit;
     public GameObject DeathScreen;
     public Text FruitCounter;
+    public Text StepCounter;
 
     private void Awake()
     {
@@ -178,9 +179,10 @@ public class BatEngine : MonoBehaviour
     }
     private void StepCheck()
     {
+        StepCounter.text = (StepLimit - StepsTaken).ToString();
         if (StepsTaken == StepLimit)
         {
-            Debug.Log("You've taken " + StepLimit + " steps.");
+            EndTurn();
         }
     }
     private void FlagCheck()
@@ -206,6 +208,7 @@ public class BatEngine : MonoBehaviour
     }
     private void EndTurn()
     {
+        StepsTaken = 0;
         BatRun = false;
         DeathScreen.SetActive(true);
         DeathScreen.GetComponent<ShareMenu>().Cycle();

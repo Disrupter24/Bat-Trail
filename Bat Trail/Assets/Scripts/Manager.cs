@@ -73,7 +73,8 @@ public class Manager : MonoBehaviour
         GameObject.Find("Bat").transform.position = GenerationSettings.StartPoint;
         Debug.Log(Manager.PlayerTurn + " is up to bat!");
         BatEngine.BatRun = true;
-        GameObject.Find("Bat").GetComponent<BatEngine>().FruitCounter.text = FruitScore[PlayerTurn].ToString();
+        GameObject.Find("Bat").GetComponent<BatEngine>().FruitCounter.text = "0";
+        GameObject.Find("Bat").GetComponent<BatEngine>().StepCounter.text = BatEngine.StepLimit.ToString();
     }
     public static void NextLevel()
     {

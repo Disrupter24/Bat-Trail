@@ -16,13 +16,19 @@ public class ShareMenu : MonoBehaviour
     public GameObject ToShareButton;
     public Sprite OnSprite;
     public Sprite OffSprite;
+    public GameObject NonZeroMenu;
     public void Cycle()
     {
         ToStashButton.GetComponent<Image>().sprite = OffSprite;
+        ToShareButton.GetComponent<Image>().sprite = OnSprite;
         FruitTotal = Manager.FruitScore[Manager.PlayerTurn];
         if (FruitTotal == 0)
         {
-            //NoFruit
+            NonZeroMenu.SetActive(false);
+        }
+        else
+        {
+            NonZeroMenu.SetActive(true);
         }
         StashAmount = FruitTotal;
         ShareAmount = 0;
