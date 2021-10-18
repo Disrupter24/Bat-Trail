@@ -37,9 +37,7 @@ public class GenerationSettings : MonoBehaviour
         GridSpriteRenderer.size = GridSize;
         GridSpriteRenderer.enabled = false;
         BatPosition.position = StartPoint;
-        MapPreparation.WallLocations = WallLocations;
-        MapPreparation.FruitLocations = FruitLocations;
-        MapPreparation.PitfallLocations = PitfallLocations;
+        LoadMap();
         BatEngine.StepLimit = StepLimit;
         MapPreparation.enabled = true;
     }
@@ -102,5 +100,48 @@ public class GenerationSettings : MonoBehaviour
     {
         Locations = new Vector2[0];
         Locations = new Vector2[ArraySize];
+    }
+    public void LoadMap()
+    {
+        switch (Manager.MapNumber)
+        {
+            case 0:
+                {
+                    MapPreparation.WallLocations = MapArrays.WallsArray1;
+                    MapPreparation.FruitLocations = MapArrays.FruitsArray1;
+                    MapPreparation.PitfallLocations = MapArrays.PitfallsArray1;
+                    break;
+                }
+            case 1:
+                {
+                    MapPreparation.WallLocations = MapArrays.WallsArray2;
+                    MapPreparation.FruitLocations = MapArrays.FruitsArray2;
+                    MapPreparation.PitfallLocations = MapArrays.PitfallsArray2;
+                    break;
+                }
+            case 2:
+                {
+                    MapPreparation.WallLocations = MapArrays.WallsArray3;
+                    MapPreparation.FruitLocations = MapArrays.FruitsArray3;
+                    MapPreparation.PitfallLocations = MapArrays.PitfallsArray3;
+                    break;
+                }
+            case 3:
+                {
+                    MapPreparation.WallLocations = MapArrays.WallsArray4;
+                    MapPreparation.FruitLocations = MapArrays.FruitsArray4;
+                    MapPreparation.PitfallLocations = MapArrays.PitfallsArray4;
+                    break;
+                }
+            case 4:
+                {
+                    MapPreparation.WallLocations = MapArrays.WallsArray5;
+                    MapPreparation.FruitLocations = MapArrays.FruitsArray5;
+                    MapPreparation.PitfallLocations = MapArrays.PitfallsArray5;
+                    break;
+                }
+        }
+        StartPoint = MapArrays.SpawnPoint[Manager.MapNumber];
+        BatPosition.position = StartPoint;
     }
 }

@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class MapPreparation : MonoBehaviour
 {
-    public static int TopBorder;
-    public static int LeftBorder;
-    public static int BottomBorder;
-    public static int RightBorder;
+    public static int TopBorder = 31;
+    public static int LeftBorder = -1;
+    public static int BottomBorder = -1;
+    public static int RightBorder = 31;
     private SpriteRenderer GridSpriteRenderer;
     public static Vector2[] WallLocations;
     public static Vector2[] FruitLocations;
@@ -26,7 +26,8 @@ public class MapPreparation : MonoBehaviour
     public static int FlagsRemaining;
     void Start()
     {
-        SetBorders(); //NOTE: This script will assume that the box is perfectly rounded to the grid and centered on 0, otherwise some jank might occur.
+        //SetBorders(); //NOTE: This script will assume that the box is perfectly rounded to the grid and centered on 0, otherwise some jank might occur.
+        // Borders will be set manually for the current game version.
         WallObjects = new GameObject[WallLocations.Length];
         FruitObjects = new GameObject[FruitLocations.Length];
         PitfallObjects = new GameObject[PitfallLocations.Length];
