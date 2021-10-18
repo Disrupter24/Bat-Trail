@@ -270,8 +270,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1848727471
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0745df0f905467b4f858c5792521d562, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1048,8 +1048,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1848727471
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 159a416eea2519544bc0cede460e7912, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1499,8 +1499,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1848727471
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dbd49df7397956c42bfc8e5a476cc88a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3151,7 +3151,7 @@ MonoBehaviour:
   GridSpriteRenderer: {fileID: 1148359437}
   BatPosition: {fileID: 1149511342}
   MapPreparation: {fileID: 1148359436}
-  StepLimit: 20
+  StepLimit: 50
 --- !u!4 &1948116933
 Transform:
   m_ObjectHideFlags: 0

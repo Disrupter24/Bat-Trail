@@ -7,7 +7,7 @@ public class Manager : MonoBehaviour
     private static Manager _instance;
     [System.NonSerialized] public static int[] FruitScore = new int[4];
     public static int PlayerTurn = 0;
-    public static int MapNumber = 0;
+    public static int MapNumber = 1;
     public static bool[] PlayerGone = new bool[4];
     public static bool[] PlayerDidStash = new bool[4];
     public static bool[] PlayerDidDie = new bool[4];
