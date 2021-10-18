@@ -19,4 +19,9 @@ public class ButtonFunctions : MonoBehaviour
     {
         BatEngine.enabled = true;
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit Game");
+    }
 }

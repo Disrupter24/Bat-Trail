@@ -45,6 +45,17 @@ public class Manager : MonoBehaviour
         if (!DoneCheck())
         {
             int i = 0;
+            while (PlayerGone[i] == true | PlayerDidDie[i] | PlayerLeftPack[i])
+            {
+                i = Random.Range(0, 4);
+            }
+            PlayerTurn = i;
+            NextPlayer();
+        }
+        else if (!PackDoneCheck())
+        {
+            PackDone();
+            int i = 0;
             while (PlayerGone[i] == true | PlayerDidDie[i])
             {
                 i = Random.Range(0, 4);
@@ -65,14 +76,29 @@ public class Manager : MonoBehaviour
             }
         }
     }
+    public static void PackDone()
+    {
+        Debug.Log("All non-pack players have gone");
+    }
     public static bool DoneCheck()
+    {
+        for (int i = 0; i < PlayerGone.Length; i++)
+        {
+            if (PlayerGone[i] == false && PlayerDidDie[i] == false && PlayerLeftPack[i] == false)
+            {
+                return false;
+            }  
+        }
+        return true;
+    }
+    public static bool PackDoneCheck()
     {
         for (int i = 0; i < PlayerGone.Length; i++)
         {
             if (PlayerGone[i] == false && PlayerDidDie[i] == false)
             {
                 return false;
-            }  
+            }
         }
         return true;
     }
@@ -125,15 +151,31 @@ public class Manager : MonoBehaviour
         {
             for (int i = 0; i < PlayerDidDie.Length; i++)
             {
-                if (Mathf.FloorToInt(SharedFruitTotal / 4) + StashCount[i] < GenerationSettings.Requirements[MapNumber])
+                if (!PlayerLeftPack[i])
                 {
-                    PlayerDidDie[i] = true;
-                    Debug.Log("Player " + (i+1) + " is dead.");
+                    if (Mathf.FloorToInt(SharedFruitTotal / 4) + StashCount[i] < GenerationSettings.Requirements[MapNumber])
+                    {
+                        PlayerDidDie[i] = true;
+                        Debug.Log("Player " + (i + 1) + " is dead.");
+                    }
+                    else
+                    {
+                        StashCount[i] -= (GenerationSettings.Requirements[MapNumber] - Mathf.FloorToInt(SharedFruitTotal / 4));
+                    }
                 }
                 else
                 {
-                    StashCount[i] -= (GenerationSettings.Requirements[MapNumber] - Mathf.FloorToInt(SharedFruitTotal / 4));
+                    if (StashCount[i] < GenerationSettings.Requirements[MapNumber])
+                    {
+                        PlayerDidDie[i] = true;
+                        Debug.Log("Player " + (i + 1) + " is dead.");
+                    }
+                    else
+                    {
+                        StashCount[i] -= GenerationSettings.Requirements[MapNumber];
+                    }
                 }
+                
             }
         }
         int count = 0;
@@ -147,6 +189,7 @@ public class Manager : MonoBehaviour
         if (count > 2)
         {
             EndGame();
+            return;
         }
         NextLevel();
     }
@@ -161,5 +204,6 @@ public class Manager : MonoBehaviour
         Debug.Log(PlayerDidDie[2]);
         Debug.Log("Is Player 4 dead?");
         Debug.Log(PlayerDidDie[3]);
+        GameObject.Find("Bat").GetComponent<BatEngine>().WinScreen.SetActive(true);
     }
 }
