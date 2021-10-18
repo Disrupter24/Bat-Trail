@@ -3617,6 +3617,11 @@ MonoBehaviour:
   - {fileID: 898302457}
   VoteMenu: {fileID: 1890787994}
   WinScreen: {fileID: 1837596824}
+  BatSprites:
+  - {fileID: 21300000, guid: 0745df0f905467b4f858c5792521d562, type: 3}
+  - {fileID: 21300000, guid: e453398c7814fbf44b0fd1ff351bafc2, type: 3}
+  - {fileID: 21300000, guid: 58d424733ca551c4dbf3d246390eeb67, type: 3}
+  - {fileID: 21300000, guid: d46bd51b83cee3d4cb3818ffca31b8e9, type: 3}
 --- !u!4 &1149511342
 Transform:
   m_ObjectHideFlags: 0

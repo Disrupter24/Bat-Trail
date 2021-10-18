@@ -27,6 +27,7 @@ public class BatEngine : MonoBehaviour
     public Text[] NumberTexts;
     public GameObject VoteMenu;
     public GameObject WinScreen;
+    public Sprite[] BatSprites;
 
     private void Awake()
     {
