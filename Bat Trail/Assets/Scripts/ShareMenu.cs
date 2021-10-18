@@ -81,6 +81,7 @@ public class ShareMenu : MonoBehaviour
         {
             Manager.PlayerDidStash[Manager.PlayerTurn] = false;
         }
+        Manager.SharedLastRound[Manager.PlayerTurn] = ShareAmount;
         Manager.StashCount[Manager.PlayerTurn] = Manager.StashCount[Manager.PlayerTurn] + StashAmount;
         Manager.SharedFruitTotal += ShareAmount;
         Manager.PlayerGone[Manager.PlayerTurn] = true;

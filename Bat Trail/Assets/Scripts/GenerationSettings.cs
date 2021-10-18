@@ -19,13 +19,15 @@ public class GenerationSettings : MonoBehaviour
     [SerializeField] private Transform BatPosition;
     [SerializeField] private MapPreparation MapPreparation;
     [SerializeField] private int StepLimit;
-    [SerializeField] public static int[] Requirements;
+    public int[] FruitRequirements;
+    [SerializeField] public static int[] Requirements = new int[5];
     private int LeftLimit;
     private int RightLimit;
     private int LowerLimit;
     private int UpperLimit;
     private void Start()
     {
+        Requirements = FruitRequirements;
         if (!LoadPreset)
         {
             ResetArray(WallLocations, RandomWallCount);
@@ -36,8 +38,8 @@ public class GenerationSettings : MonoBehaviour
         }
         GridSpriteRenderer.size = GridSize;
         GridSpriteRenderer.enabled = false;
-        BatPosition.position = StartPoint;
         LoadMap();
+        BatPosition.position = StartPoint;
         BatEngine.StepLimit = StepLimit;
         MapPreparation.enabled = true;
     }
@@ -101,7 +103,7 @@ public class GenerationSettings : MonoBehaviour
         Locations = new Vector2[0];
         Locations = new Vector2[ArraySize];
     }
-    public void LoadMap()
+    public static void LoadMap()
     {
         switch (Manager.MapNumber)
         {
@@ -142,6 +144,5 @@ public class GenerationSettings : MonoBehaviour
                 }
         }
         StartPoint = MapArrays.SpawnPoint[Manager.MapNumber];
-        BatPosition.position = StartPoint;
     }
 }

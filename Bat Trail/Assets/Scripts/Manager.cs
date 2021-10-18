@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour
 {
     private static Manager _instance;
     [System.NonSerialized] public static int[] FruitScore = new int[4];
     public static int PlayerTurn = 0;
-    public static int MapNumber = 1;
+    public static int MapNumber = 0;
     public static bool[] PlayerGone = new bool[4];
     public static bool[] PlayerDidStash = new bool[4];
     public static bool[] PlayerDidDie = new bool[4];
+    public static bool[] PlayerLeftPack = new bool[4];
     public static int[] StashCount = new int[4];
+    public static int[] SharedLastRound = new int[4];
     public static int SharedFruitTotal;
+    private static GameObject Bat;
 
     public static Manager Instance
     {
@@ -40,9 +44,8 @@ public class Manager : MonoBehaviour
     {
         if (!DoneCheck())
         {
-            int counter = 0;
             int i = 0;
-            while (PlayerGone[i] == true && counter < 1000)
+            while (PlayerGone[i] == true | PlayerDidDie[i])
             {
                 i = Random.Range(0, 4);
             }
@@ -52,14 +55,21 @@ public class Manager : MonoBehaviour
         else
         {
             PlayerTurn = Random.Range(0, 3);
-            NextLevel();
+            if (!VoteMenu.NoPack) 
+            {
+                VoteTime();
+            }
+            else
+            {
+                DeadCheck();
+            }
         }
     }
     public static bool DoneCheck()
     {
         for (int i = 0; i < PlayerGone.Length; i++)
         {
-            if (PlayerGone[i] == false)
+            if (PlayerGone[i] == false && PlayerDidDie[i] == false)
             {
                 return false;
             }  
@@ -70,25 +80,86 @@ public class Manager : MonoBehaviour
     {
         string skinstring = "sprites/Bat" + PlayerTurn.ToString();
         GameObject.Find("Bat/BatSprite").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(skinstring);
-        GameObject.Find("Bat").transform.position = GenerationSettings.StartPoint;
-        Debug.Log(Manager.PlayerTurn + " is up to bat!");
+        Debug.Log("Loading Skin: " + skinstring);
+        if (Bat == null)
+        {
+            Bat = GameObject.Find("Bat");
+        }
+        Bat.transform.position = GenerationSettings.StartPoint;
+        Debug.Log("Player " + (PlayerTurn+1) + " is up to bat!");
+        FruitScore[PlayerTurn] = 0;
         BatEngine.BatRun = true;
-        GameObject.Find("Bat").GetComponent<BatEngine>().FruitCounter.text = "0";
+        Bat.GetComponent<BatEngine>().FruitCounter.text = "0";
         MapPreparation.FlagsRemaining = BatEngine.FlagMax;
-        GameObject.Find("Bat").GetComponent<BatEngine>().StepCounter.text = BatEngine.StepLimit.ToString();
-        GameObject.Find("Bat").GetComponent<BatEngine>().FlagCounter.text = MapPreparation.FlagsRemaining.ToString();
+        Bat.GetComponent<BatEngine>().StepCounter.text = BatEngine.StepLimit.ToString();
+        Bat.GetComponent<BatEngine>().FlagCounter.text = MapPreparation.FlagsRemaining.ToString();
+    }
+    public static void VoteTime()
+    {
+        Bat.GetComponent<BatEngine>().VoteMenu.SetActive(true);
+        Bat.GetComponent<BatEngine>().VoteTextUpdate();
+        Bat.GetComponent<BatEngine>().VoteMenu.GetComponent<VoteMenu>().LoadMenu();
     }
     public static void NextLevel()
     {
-        Debug.Log("All players have gone!");
-        Debug.Log(SharedFruitTotal);
-        Debug.Log(StashCount[0]);
-        Debug.Log(PlayerDidStash[0]);
-        Debug.Log(StashCount[1]);
-        Debug.Log(PlayerDidStash[1]);
-        Debug.Log(StashCount[2]);
-        Debug.Log(PlayerDidStash[2]);
-        Debug.Log(StashCount[3]);
-        Debug.Log(PlayerDidStash[3]);
+        for (int i = 0; i < PlayerGone.Length; i++)
+        {
+            PlayerGone[i] = false;
+            SharedLastRound[i] = 0;
+        }
+        if (MapNumber < 5)
+        {
+            MapNumber++;
+            SceneManager.LoadScene(1);
+            GenerationSettings.LoadMap();
+            NextPlayer();
+        }
+        else
+        {
+            EndGame();
+        }        
+    }
+    public static void DeadCheck()
+    {
+        if (Mathf.FloorToInt(SharedFruitTotal / 4) < GenerationSettings.Requirements[MapNumber])
+        {
+            for (int i = 0; i < PlayerDidDie.Length; i++)
+            {
+                if (Mathf.FloorToInt(SharedFruitTotal / 4) + StashCount[i] < GenerationSettings.Requirements[MapNumber])
+                {
+                    PlayerDidDie[i] = true;
+                    Debug.Log("Player " + (i+1) + " is dead.");
+                }
+                else
+                {
+                    StashCount[i] -= (GenerationSettings.Requirements[MapNumber] - Mathf.FloorToInt(SharedFruitTotal / 4));
+                }
+            }
+        }
+        int count = 0;
+        for (int i = 0; i < PlayerDidDie.Length; i++)
+        {
+            if (PlayerDidDie[i])
+            {
+                count++;
+            }
+        }
+        if (count > 2)
+        {
+            EndGame();
+        }
+        NextLevel();
+    }
+    public static void EndGame()
+    {
+        Debug.Log("The Game is Over");
+        Debug.Log("Is Player 1 dead?");
+        Debug.Log(PlayerDidDie[0]);
+        Debug.Log("Is Player 2 dead?");
+        Debug.Log(PlayerDidDie[1]);
+        Debug.Log("Is Player 3 dead?");
+        Debug.Log(PlayerDidDie[2]);
+        Debug.Log("Is Player 4 dead?");
+        Debug.Log(PlayerDidDie[3]);
     }
 }

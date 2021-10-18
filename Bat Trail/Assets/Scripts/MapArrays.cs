@@ -25,7 +25,7 @@ public class MapArrays : MonoBehaviour
         SpawnPoint[0] = new Vector2(10, 0);
         SpawnPoint[1] = new Vector2(14, 0);
         SpawnPoint[2] = new Vector2(0, 25);
-        SpawnPoint[3] = new Vector2(10, 27);
+        SpawnPoint[3] = new Vector2(10, 26);
         SpawnPoint[4] = new Vector2(13, 0);
         Fruit1();
         Pitfall1();
@@ -42,6 +42,7 @@ public class MapArrays : MonoBehaviour
         Fruit5();
         Pitfall5();
         Wall5();
+        gameObject.GetComponent<GenerationSettings>().enabled = true;
     }
     private void Fruit1()
     {
