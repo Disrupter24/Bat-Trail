@@ -24,6 +24,9 @@ public class BatEngine : MonoBehaviour
     public Text FruitCounter;
     public Text StepCounter;
     public Text FlagCounter;
+    public Text[] NumberTexts;
+    public GameObject VoteMenu;
+    public GameObject WinScreen;
 
     private void Awake()
     {
@@ -214,5 +217,16 @@ public class BatEngine : MonoBehaviour
         BatRun = false;
         DeathScreen.SetActive(true);
         DeathScreen.GetComponent<ShareMenu>().Cycle();
+        if (Manager.PlayerLeftPack[Manager.PlayerTurn])
+        {
+            DeathScreen.GetComponent<ShareMenu>().Submit();
+        }
+    }
+    public void VoteTextUpdate()
+    {
+        for (int i = 0; i < NumberTexts.Length; i++)
+        {
+            NumberTexts[i].text = Manager.SharedLastRound[i].ToString();
+        }
     }
 }
