@@ -74,7 +74,9 @@ public class Manager : MonoBehaviour
         Debug.Log(Manager.PlayerTurn + " is up to bat!");
         BatEngine.BatRun = true;
         GameObject.Find("Bat").GetComponent<BatEngine>().FruitCounter.text = "0";
+        MapPreparation.FlagsRemaining = BatEngine.FlagMax;
         GameObject.Find("Bat").GetComponent<BatEngine>().StepCounter.text = BatEngine.StepLimit.ToString();
+        GameObject.Find("Bat").GetComponent<BatEngine>().FlagCounter.text = MapPreparation.FlagsRemaining.ToString();
     }
     public static void NextLevel()
     {

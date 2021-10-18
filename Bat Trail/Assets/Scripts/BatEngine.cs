@@ -14,7 +14,6 @@ public class BatEngine : MonoBehaviour
     private Vector2 Down = new Vector2(0, -1);
     private Vector2 Right = new Vector2(1, 0);
     private Vector2 None = new Vector2(0, 0);
-    private int FlagsLeft;
     [System.NonSerialized] public static int FlagMax = 3;
     [System.NonSerialized] public static bool BatRun = true;
     private bool Slowdown = true;
@@ -24,10 +23,12 @@ public class BatEngine : MonoBehaviour
     public GameObject DeathScreen;
     public Text FruitCounter;
     public Text StepCounter;
+    public Text FlagCounter;
 
     private void Awake()
     {
-        FlagsLeft = FlagMax;
+        MapPreparation.FlagsRemaining = FlagMax;
+        FlagCounter.text = MapPreparation.FlagsRemaining.ToString();
     }
     void Update()
     {
@@ -208,6 +209,7 @@ public class BatEngine : MonoBehaviour
     }
     private void EndTurn()
     {
+        MapPreparation.FlagsRemaining = FlagMax;
         StepsTaken = 0;
         BatRun = false;
         DeathScreen.SetActive(true);

@@ -23,6 +23,7 @@ public class MapPreparation : MonoBehaviour
     public static  GameObject[] PitfallObjects;
     public static GameObject[] FlagObjects;
     private static int TargetFlag;
+    public static int FlagsRemaining;
     void Start()
     {
         SetBorders(); //NOTE: This script will assume that the box is perfectly rounded to the grid and centered on 0, otherwise some jank might occur.
@@ -65,9 +66,11 @@ public class MapPreparation : MonoBehaviour
         if (CheckV2Array(FlagLocations, TargetPos))
         {
             FlagLocations[TargetFlag] = Vector2.zero;
+            FlagsRemaining++;
+            GameObject.Find("Bat").GetComponent<BatEngine>().FlagCounter.text = FlagsRemaining.ToString();
             Destroy(FlagObjects[TargetFlag]);
         }
-        else
+        else if (FlagsRemaining > 0)
         {
             PlaceFlag(TargetPos);
         }
@@ -98,11 +101,12 @@ public class MapPreparation : MonoBehaviour
     {
         for (int i = 0; i < FlagLocations.Length; i++)
         {
-            Debug.Log(FlagLocations[i]);
             if (FlagLocations[i] == Vector2.zero)
             {
                 FlagLocations[i] = PlacementCoords;
                 FlagObjects[i] = Instantiate(FlagPrefab, PlacementCoords, Quaternion.identity) as GameObject;
+                FlagsRemaining--;
+                GameObject.Find("Bat").GetComponent<BatEngine>().FlagCounter.text = FlagsRemaining.ToString();
                 return;
             }
         }
