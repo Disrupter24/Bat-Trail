@@ -2051,6 +2051,7 @@ MonoBehaviour:
   DeathScreen: {fileID: 2134284414}
   FruitCounter: {fileID: 1322694267}
   StepCounter: {fileID: 967036941}
+  FlagCounter: {fileID: 88484147}
 --- !u!4 &1149511342
 Transform:
   m_ObjectHideFlags: 0

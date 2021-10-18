@@ -91,7 +91,7 @@ public class ShareMenu : MonoBehaviour
     {
         TotalText.text = FruitTotal.ToString();
         ShareText.text = ShareAmount.ToString();
-        StashText.text = StashAmount.ToString();
+        StashText.text = (StashAmount + Manager.StashCount[Manager.PlayerTurn]).ToString();
     //    RequirementText.text = GenerationSettings.Requirements[Manager.MapNumber].ToString();
     }
 }
