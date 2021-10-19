@@ -17,6 +17,7 @@ public class Manager : MonoBehaviour
     public static int[] SharedLastRound = new int[4];
     public static int SharedFruitTotal;
     private static GameObject Bat;
+    private static int LeftPackCount;
 
     public static Manager Instance
     {
@@ -149,13 +150,14 @@ public class Manager : MonoBehaviour
     }
     public static void DeadCheck()
     {
+        InPackCount();
         if (Mathf.FloorToInt(SharedFruitTotal / 4) < GenerationSettings.Requirements[MapNumber])
         {
             for (int i = 0; i < PlayerDidDie.Length; i++)
             {
                 if (!PlayerLeftPack[i])
                 {
-                    if (Mathf.FloorToInt(SharedFruitTotal / 4) + StashCount[i] < GenerationSettings.Requirements[MapNumber])
+                    if (Mathf.FloorToInt(SharedFruitTotal / LeftPackCount) + StashCount[i] < GenerationSettings.Requirements[MapNumber])
                     {
                         PlayerDidDie[i] = true;
                         Debug.Log("Player " + (i + 1) + " is dead.");
@@ -194,6 +196,17 @@ public class Manager : MonoBehaviour
             return;
         }
         NextLevel();
+    }
+    public static void InPackCount()
+    {
+        LeftPackCount = 0;
+        for (int i=0; i < PlayerLeftPack.Length; i++)
+        {
+            if (!PlayerLeftPack[i])
+            {
+                LeftPackCount++;
+            }
+        }
     }
     public static void EndGame()
     {
